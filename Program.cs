@@ -6,6 +6,7 @@ using System.Collections;
 using System;
 using System.Reflection.Metadata;
 using NewAvitoParser;
+using System.Text.RegularExpressions;
 
 namespace AvitoParser
 {
@@ -63,12 +64,12 @@ namespace AvitoParser
 				{
 					ConnectToUrl(driver, Constants.ElectronicSectionsList[0]);
 					//foreach (var url in Constants.ElectronicSectionsList)
-					{
-						var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
-							.Select(item => item.GetAttribute("href"));
+					//{
+					//	var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
+					//		.Select(item => item.GetAttribute("href"));
 
-						File.WriteAllLines(path: Constants.Files.Links, contents: links.ToList());
-					}
+					//	File.WriteAllLines(path: Constants.Files.Links, contents: links.ToList());
+					//}
 
 					{
 						var links = File.ReadAllLines(Constants.Files.Links).ToList();
@@ -76,18 +77,29 @@ namespace AvitoParser
 						{
 							ConnectToUrl(driver, url);
 
-							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O")).Select(item =>
+							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
+
+							foreach (var elem in attributes)
 							{
-								var list = item.Text.Split(" ");
+								var text = elem.Text;
+								int index = elem.Text.Skip(1).First(x => Char.IsUpper(x));
+								text = elem.Text.Insert(index, " ");
+								
+								Console.WriteLine(text);
+							}
 
-								var property = new Property
-								{
-									Name = list[0],
-									Value = list[1]
-								};
+							/*.Select(item =>*/
+							//{
+							//	var list = item.Text.Split(" ");
 
-								return AvitoParamsConverter.ParamDisoposer(property);
-							}).ToList();
+							//	var property = new Property
+							//	{
+							//		Name = list[0],
+							//		Value = list[1]
+							//	};
+
+							//	return AvitoParamsConverter.ParamDisoposer(property);
+							//}).ToList();
 						}
 					}
 

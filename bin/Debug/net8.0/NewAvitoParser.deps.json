@@ -9,7 +9,8 @@
       "NewAvitoParser/1.0.0": {
         "dependencies": {
           "CsvHelper": "33.0.1",
-          "Selenium.WebDriver": "4.25.0"
+          "Selenium.WebDriver": "4.25.0",
+          "Selenium.WebDriver.ChromeDriver": "129.0.6668.10000"
         },
         "runtime": {
           "NewAvitoParser.dll": {}
@@ -30,7 +31,8 @@
             "fileVersion": "4.0.0.0"
           }
         }
-      }
+      },
+      "Selenium.WebDriver.ChromeDriver/129.0.6668.10000": {}
     }
   },
   "libraries": {
@@ -52,6 +54,13 @@
       "sha512": "sha512-0g/9I5ennfL2ZaQoXsfEPj+GcqrKlcVr1yxh3C/Eed/acNZrC38OaXLorsuHdAHiGn+QySV3iz8/hFcOXvVcoA==",
       "path": "selenium.webdriver/4.25.0",
       "hashPath": "selenium.webdriver.4.25.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver.ChromeDriver/129.0.6668.10000": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ITK8gxLEAlDIonktadjenCmaZooh0uxYcgkatfV6HnEEQIRnhHDvM9OhKvM1meaZpHc/DLVCTvK4HV4jSX08aA==",
+      "path": "selenium.webdriver.chromedriver/129.0.6668.10000",
+      "hashPath": "selenium.webdriver.chromedriver.129.0.6668.10000.nupkg.sha512"
     }
   }
 }

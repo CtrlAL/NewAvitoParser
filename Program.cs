@@ -44,7 +44,6 @@ namespace AvitoParser
 			ChromeOptions options = new ChromeOptions();
 			options.AddArgument("no-sandbox");
 			options.AddArgument("headless");
-			options.BinaryLocation = "/opt/google/chrome/google-chrome";
 			//options.AddArgument("--proxy-server=http://20.206.106.192:8123");
 			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
 			

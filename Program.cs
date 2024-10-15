@@ -3,6 +3,9 @@ using NewAvitoParser.Coomon;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Collections;
+using System;
+using System.Reflection.Metadata;
+using NewAvitoParser;
 
 namespace AvitoParser
 {
@@ -58,10 +61,37 @@ namespace AvitoParser
 			{
 				try
 				{
-					ConnectToUrl(driver, Constants.BaseUrl);
+					ConnectToUrl(driver, Constants.ElectronicSectionsList[0]);
+					//foreach (var url in Constants.ElectronicSectionsList)
+					{
+						var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
+							.Select(item => item.GetAttribute("href"));
 
-					var title = driver.FindElement(By.ClassName("main-top-header"));
-					Console.WriteLine(title.Text);
+						File.WriteAllLines(path: Constants.Files.Links, contents: links.ToList());
+					}
+
+					{
+						var links = File.ReadAllLines(Constants.Files.Links).ToList();
+						foreach (var url in links)
+						{
+							ConnectToUrl(driver, url);
+
+							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O")).Select(item =>
+							{
+								var list = item.Text.Split(" ");
+
+								var property = new Property
+								{
+									Name = list[0],
+									Value = list[1]
+								};
+
+								return AvitoParamsConverter.ParamDisoposer(property);
+							}).ToList();
+						}
+					}
+
+					
 
 				}
 				catch (Exception ex)

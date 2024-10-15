@@ -1,9 +1,9 @@
 ﻿using NewAvitoParser.CsvServices;
 namespace NewAvitoParser
 {
-	public class AvitoParamsConverter
+	public static class AvitoParamsConverter
 	{
-		public List<Property> ParamDisoposer(Property property)
+		static public List<Property> ParamDisoposer(Property property)
 		{
 			var result = new List<Property>();
 			if (NeedDispose(property))
@@ -25,7 +25,7 @@ namespace NewAvitoParser
 			}
 		}
 
-		private bool NeedDispose(Property property)
+		private static bool NeedDispose(Property property)
 		{
 			var value = property.Value;
 			if (value.Split(',').Count() > 1)

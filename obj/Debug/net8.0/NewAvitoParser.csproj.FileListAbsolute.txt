@@ -12,3 +12,10 @@ C:\Larcev\NewAvitoParser\obj\Debug\net8.0\refint\NewAvitoParser.dll
 C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.pdb
 C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.genruntimeconfig.cache
 C:\Larcev\NewAvitoParser\obj\Debug\net8.0\ref\NewAvitoParser.dll
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\CsvHelper.dll
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\WebDriver.dll
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.csproj.AssemblyReference.cache
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvito.830BAE0B.Up2Date

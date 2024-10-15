@@ -1,10 +1,8 @@
-﻿using CsvHelper;
-using NewAvitoParser.CsvServices;
+﻿using NewAvitoParser.CsvServices;
 using NewAvitoParser.Coomon;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Collections;
-using System.Globalization;
 
 namespace AvitoParser
 {
@@ -26,7 +24,7 @@ namespace AvitoParser
 			int i = 0;
 			while (!task.IsCompleted)
 			{
-				System.Threading.Thread.Sleep(1000);
+				Thread.Sleep(1000);
 				i++;
 				yield return i;
 			}
@@ -46,7 +44,7 @@ namespace AvitoParser
 			ChromeOptions options = new ChromeOptions();
 			options.AddArgument("no-sandbox");
 			options.AddArgument("headless");
-			options.AddArgument("--proxy-server=http://20.206.106.192:8123");
+			//options.AddArgument("--proxy-server=http://20.206.106.192:8123");
 			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
 			driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
 
@@ -58,9 +56,15 @@ namespace AvitoParser
 				try
 				{
 					ConnectToUrl(driver, Constants.BaseUrl);
+
+					var title = driver.FindElement(By.ClassName("main-top-header"));
+					Console.WriteLine(title.Text);
+
 				}
 				catch (Exception ex)
 				{
+					Console.WriteLine(ex.Message);
+					return;
 				}
 				finally
 				{

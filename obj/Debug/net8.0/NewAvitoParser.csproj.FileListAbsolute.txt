@@ -1,0 +1,14 @@
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\NewAvitoParser.exe
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\NewAvitoParser.deps.json
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\NewAvitoParser.runtimeconfig.json
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\NewAvitoParser.dll
+C:\Larcev\NewAvitoParser\bin\Debug\net8.0\NewAvitoParser.pdb
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.AssemblyInfoInputs.cache
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.AssemblyInfo.cs
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.csproj.CoreCompileInputs.cache
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.dll
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\refint\NewAvitoParser.dll
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.pdb
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\NewAvitoParser.genruntimeconfig.cache
+C:\Larcev\NewAvitoParser\obj\Debug\net8.0\ref\NewAvitoParser.dll

@@ -65,7 +65,8 @@ namespace AvitoParser
 						for (int i = 0; i < 100; i++)
 						{
 							ConnectToUrl(driver, url + $"?p={i}");
-							currentUrl = url + "?p=4";
+							currentUrl = url + $"?p={i}";
+
 							Console.WriteLine($"LINK{i}:{currentUrl}");
 							var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
 							.Select(item => item.GetAttribute("href"));

@@ -50,7 +50,7 @@ namespace AvitoParser
 
 
 			//options.BinaryLocation = "/opt/google/chrome/google-chrome";
-			//options.AddArgument("--proxy-server=http://20.206.106.192:8123");
+			options.AddArgument("--proxy-server=http://20.206.106.192:8123");
 
 			driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
 

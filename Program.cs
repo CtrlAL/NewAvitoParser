@@ -45,7 +45,8 @@ namespace AvitoParser
 			ChromeOptions options = new ChromeOptions();
 			options.AddArgument("headless");
 			options.AddArgument("disable-gpu");
-			options.AddArgument("no-sandbox");	
+			options.AddArgument("no-sandbox");
+			options.BinaryLocation = "/opt/google/chrome";
 			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
 
 

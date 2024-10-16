@@ -1,0 +1,12 @@
+ERROR:
+{
+Message: The HTTP request to the remote WebDriver server for URL http://localhost:58387/session/b486ae5cdc7dcd72944b0061cf3cdc6e/elements timed out after 180 seconds.
+StackTrace:    at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElements(String mechanism, String value)
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\NewAvitoParser\Program.cs:line 75
+LastUrl: https://www.avito.ru/all/tovary_dlya_kompyutera?p=30
+
+}

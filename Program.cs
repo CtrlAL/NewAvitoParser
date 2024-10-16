@@ -45,11 +45,13 @@ namespace AvitoParser
 			ChromeOptions options = new ChromeOptions();
 			options.AddArgument("headless");
 			options.AddArgument("disable-gpu");
-			options.AddArgument("--no-sandbox");
+			options.AddArgument("no-sandbox");	
+			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
+
+
 			//options.BinaryLocation = "/opt/google/chrome/google-chrome";
 			//options.AddArgument("--proxy-server=http://20.206.106.192:8123");
-			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
-			
+
 			driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
 
 			var urlList = new HashSet<string>();
@@ -60,23 +62,29 @@ namespace AvitoParser
 			{
 				try
 				{
-					foreach (var url in Constants.ElectronicSectionsList)
 					{
-						for (int i = 0; i < 100; i++)
+						var links = new List<string>();
+						foreach (var url in Constants.ElectronicSectionsList)
 						{
-							ConnectToUrl(driver, url + $"?p={i}");
-							currentUrl = url + $"?p={i}";
+							for (int i = 0; i < 100; i++)
+							{
+								ConnectToUrl(driver, url + $"?p={i}");
+								currentUrl = url + $"?p={i}";
 
-							Console.WriteLine($"LINK{i}:{currentUrl}");
-							var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
-							.Select(item => item.GetAttribute("href"));
+								Console.WriteLine($"LINK{i}:{currentUrl}");
+								var hrefs = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
+								.Select(item => item.GetAttribute("href")).ToArray();
 
-							File.WriteAllLines(path: Constants.Files.Links, contents: links.ToList());
+								links.AddRange(hrefs);
+							}
 						}
+
+						File.WriteAllLines(path: Constants.Files.Links, contents: links);
+
 					}
 
 					{
-						var links = File.ReadAllLines(Constants.Files.Links).ToList();
+						var links = File.ReadAllLines(Constants.Files.Links);
 						var propertiesList = new List<Property>();
 
 						foreach (var url in links)

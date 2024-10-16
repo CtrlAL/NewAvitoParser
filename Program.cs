@@ -54,7 +54,7 @@ namespace AvitoParser
 
 			var urlList = new HashSet<string>();
 			var properties = new HashSet<Property>();
-			string currentUrl = null;
+			string currentUrl = string.Empty;
 
 			using (driver)
 			{
@@ -64,8 +64,9 @@ namespace AvitoParser
 					{
 						for (int i = 0; i < 100; i++)
 						{
-							ConnectToUrl(driver, url + "?p=4");
+							ConnectToUrl(driver, url + $"?p={i}");
 							currentUrl = url + "?p=4";
+							Console.WriteLine($"LINK{i}:{currentUrl}");
 							var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
 							.Select(item => item.GetAttribute("href"));
 
@@ -81,7 +82,7 @@ namespace AvitoParser
 						{
 							ConnectToUrl(driver, url);
 							currentUrl = url;
-
+							Console.WriteLine($"PRODUCT_LINK:{currentUrl}");
 							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
 							foreach (var elem in attributes)
 							{

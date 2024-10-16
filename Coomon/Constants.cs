@@ -20,9 +20,10 @@
 		public static class Files
 		{
 			public static string Properties = "..\\..\\Properties.csv";
-			public static string PropertyNames = "..\\..\\Properties.csv";
-			public static string PropertyValues = "..\\..\\Properties.csv";
+			public static string PropertyNames = "..\\..\\PropertyNames.csv";
+			public static string PropertyValues = "..\\..\\PropertyValues.csv";
 			public static string Links = "..\\..\\Links.csv";
+			public static string LogFile = "..\\..\\LogFile.csv";
 		};
 	}
 }

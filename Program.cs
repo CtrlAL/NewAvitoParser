@@ -3,10 +3,7 @@ using NewAvitoParser.Coomon;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Collections;
-using System;
-using System.Reflection.Metadata;
 using NewAvitoParser;
-using System.Text.RegularExpressions;
 
 namespace AvitoParser
 {
@@ -57,63 +54,81 @@ namespace AvitoParser
 
 			var urlList = new HashSet<string>();
 			var properties = new HashSet<Property>();
+			string currentUrl = null;
 
 			using (driver)
 			{
 				try
 				{
-					ConnectToUrl(driver, Constants.ElectronicSectionsList[0]);
-					//foreach (var url in Constants.ElectronicSectionsList)
-					//{
-					//	var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
-					//		.Select(item => item.GetAttribute("href"));
-
-					//	File.WriteAllLines(path: Constants.Files.Links, contents: links.ToList());
-					//}
-
+					foreach (var url in Constants.ElectronicSectionsList)
 					{
-						var links = File.ReadAllLines(Constants.Files.Links).ToList();
-						foreach (var url in links)
+						for (int i = 0; i < 100; i++)
 						{
-							ConnectToUrl(driver, url);
+							ConnectToUrl(driver, url + "?p=4");
+							currentUrl = url + "?p=4";
+							var links = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
+							.Select(item => item.GetAttribute("href"));
 
-							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
-
-							foreach (var elem in attributes)
-							{
-								var text = elem.Text;
-								int index = elem.Text.Skip(1).First(x => Char.IsUpper(x));
-								text = elem.Text.Insert(index, " ");
-								
-								Console.WriteLine(text);
-							}
-
-							/*.Select(item =>*/
-							//{
-							//	var list = item.Text.Split(" ");
-
-							//	var property = new Property
-							//	{
-							//		Name = list[0],
-							//		Value = list[1]
-							//	};
-
-							//	return AvitoParamsConverter.ParamDisoposer(property);
-							//}).ToList();
+							File.WriteAllLines(path: Constants.Files.Links, contents: links.ToList());
 						}
 					}
 
-					
+					{
+						var links = File.ReadAllLines(Constants.Files.Links).ToList();
+						var propertiesList = new List<Property>();
 
+						foreach (var url in links)
+						{
+							ConnectToUrl(driver, url);
+							currentUrl = url;
+
+							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
+							foreach (var elem in attributes)
+							{
+								string[] nameValuePare;
+
+								if (!elem.Text.Contains(':'))
+								{
+									var text = elem.Text.Substring(1);
+									var upperCase = text.Where(char.IsUpper).First();
+									var index = text.IndexOf(upperCase);
+									text = elem.Text.Insert(index + 1, " ");
+									nameValuePare = text.Split(" ");
+								}
+								else
+								{
+									nameValuePare = elem.Text.Split(':');
+								}
+								
+								var property = new Property
+								{
+									Name = nameValuePare[0].Trim(' '),
+									Value = nameValuePare[1].Trim(' ')
+								};
+
+								propertiesList.AddRange(AvitoParamsConverter.ParamDisoposer(property));
+							}
+						}
+						properties = new HashSet<Property>(propertiesList);
+					}
 				}
 				catch (Exception ex)
 				{
+					string log = 
+						"ERROR:\n{\n" 
+						+ $"Message: {ex.Message}\n" 
+						+ $"StackTrace: {ex.StackTrace}\n"
+						+ $"LastUrl: {currentUrl}\n"
+						+ "\n}\n";
+
+					File.AppendAllText(Constants.Files.LogFile, log);
 					Console.WriteLine(ex.Message);
 					return;
 				}
 				finally
 				{
-
+					HelperCsv.WriteFile(Constants.Files.Properties, properties);
+					driver.Quit();
 				}
 			}
 		}

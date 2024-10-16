@@ -5,7 +5,7 @@ namespace NewAvitoParser.CsvServices
 {
 	public static class HelperCsv
 	{
-		public static void WriteFile<T>(string path, List<T> content)
+		public static void WriteFile<T>(string path, ICollection<T> content)
 		{
 			using (var writer = new StreamWriter(path))
 			using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))

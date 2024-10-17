@@ -146,6 +146,7 @@ namespace AvitoParser
 						+ $"LastUrl: {currentUrl}\n"
 						+ "\n}\n";
 
+					Console.WriteLine(log);
 					HelperCsv.WriteFile(Constants.Files.Properties, properties);
 					File.AppendAllText(Constants.Files.LogFile, log);
 					Console.WriteLine(ex.Message);

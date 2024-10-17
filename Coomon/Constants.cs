@@ -52,15 +52,15 @@
 			public static string PropertyNamesVariant(string varitant) => $"..\\..\\PropertyNames{varitant}.csv";
 			public static string PropertyValuesVariant(string varitant) => $"..\\..\\PropertyValues{varitant}.csv";
 #else
-			public static string Properties = "../../Properties.csv";
-			public static string PropertyNames = "../../PropertyNames.csv";
-			public static string PropertyValues = "../../PropertyValues.csv";
-			public static string Links = "../../Links.csv";
-			public static string LogFile = "../../LogFile.csv";
-			public static string LinksVaritant(string variant) => $"../../Links{variant}.csv";
-			public static string PropertiesVaritant(string varitant) => $"../../Properties{varitant}.csv";
-			public static string PropertyNamesVariant(string varitant) => $"../../PropertyNames{varitant}.csv";
-			public static string PropertyValuesVariant(string varitant) => $"../../PropertyValues{varitant}.csv";
+			public static string Properties = "/bin/LINUX_Properties.csv";
+			public static string PropertyNames = "/bin/LINUX_PropertyNames.csv";
+			public static string PropertyValues = "/bin/LINUX_PropertyValues.csv";
+			public static string Links = "/bin/Links.csv";
+			public static string LogFile = "/bin/LogFile.csv";
+			public static string LinksVaritant(string variant) => $"/bin/LINUX_Links{variant}.csv";
+			public static string PropertiesVaritant(string varitant) => $"/bin/LINUX_Properties{varitant}.csv";
+			public static string PropertyNamesVariant(string varitant) => $"/bin/LINUX_PropertyNames{varitant}.csv";
+			public static string PropertyValuesVariant(string varitant) => $"/bin/LINUX_PropertyValues{varitant}.csv";
 #endif
 		};
 	}

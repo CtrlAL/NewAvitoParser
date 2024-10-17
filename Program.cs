@@ -100,32 +100,40 @@ namespace AvitoParser
 							currentUrl = url;
 							Console.WriteLine($"PRODUCT_LINK:{currentUrl}");
 							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
-							foreach (var elem in attributes)
+
+							if (attributes != null)
 							{
-								string[] nameValuePare;
+								foreach (var elem in attributes)
+								{
+									string[] nameValuePare;
 
-								if (!elem.Text.Contains(':'))
-								{
-									var text = elem.Text.Substring(1);
-									var upperCase = text.Where(char.IsUpper).First();
-									var index = text.IndexOf(upperCase);
-									text = elem.Text.Insert(index + 1, " ");
-									nameValuePare = text.Split(" ");
-								}
-								else
-								{
-									nameValuePare = elem.Text.Split(':');
-								}
-								
-								var property = new Property
-								{
-									Name = nameValuePare[0].Trim(' '),
-									Value = nameValuePare[1].Trim(' ')
-								};
+									if (elem != null)
+									{
+										if (!elem.Text.Contains(':'))
+										{
+											var text = elem.Text.Substring(1);
+											var upperCase = text.Where(char.IsUpper).First();
+											var index = text.IndexOf(upperCase);
+											text = elem.Text.Insert(index + 1, " ");
+											nameValuePare = text.Split(" ");
+										}
+										else
+										{
+											nameValuePare = elem.Text.Split(':');
+										}
 
-								propertiesList.AddRange(AvitoParamsConverter.ParamDisoposer(property));
+										var property = new Property
+										{
+											Name = nameValuePare[0].Trim(' '),
+											Value = nameValuePare[1].Trim(' ')
+										};
+
+										propertiesList.AddRange(AvitoParamsConverter.ParamDisoposer(property));
+									}
+								}
 							}
 						}
+
 						properties = new HashSet<Property>(propertiesList);
 					}
 				}

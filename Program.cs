@@ -111,16 +111,23 @@ namespace AvitoParser
 						var links = new List<string>();
 						foreach (var url in Constants.CategoriesList[(int)categoryId])
 						{
-							for (int i = 0; i < 100; i++)
+							try
 							{
-								ConnectToUrl(driver, url + $"?p={i}");
-								currentUrl = url + $"?p={i}";
+								for (int i = 0; i < 100; i++)
+								{
+									ConnectToUrl(driver, url + $"?p={i}");
+									currentUrl = url + $"?p={i}";
 
-								Console.WriteLine($"LINK{i}:{currentUrl}");
-								var hrefs = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
-								.Select(item => item.GetAttribute("href")).ToArray();
+									Console.WriteLine($"LINK{i}:{currentUrl}");
+									var hrefs = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
+									.Select(item => item.GetAttribute("href")).ToArray();
 
-								links.AddRange(hrefs);
+									links.AddRange(hrefs);
+								}
+							}
+							catch(Exception ex)
+							{
+								continue;
 							}
 						}
 

@@ -34,3 +34,15 @@ StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response error
 LastUrl: https://www.avito.ru/nizhniy_novgorod/telefony/iphone_12_mini_64_gb_4272395190?slocation=621540&context=H4sIAAAAAAAA_0q0MrSqLrYyNLZSyslPTswJKMrML8osqVSyTrIysK4FBAAA__8LHhdkHwAAAA
 
 }
+ERROR:
+{
+Message: The HTTP request to the remote WebDriver server for URL http://localhost:55685/session/06ad5803beeb3621e552e5b22fd25aaf/elements timed out after 180 seconds.
+StackTrace:    at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElements(String mechanism, String value)
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\NewAvitoParser\Program.cs:line 102
+LastUrl: https://www.avito.ru/moskva/telefony/iphone_12_128_gb_4317169461?slocation=621540&context=H4sIAAAAAAAA_0q0MrSqLrYyNLZSyslPTswJKMrML8osqVSyTrIysK4FBAAA__8LHhdkHwAAAA
+
+}

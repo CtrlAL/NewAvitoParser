@@ -48,20 +48,30 @@ namespace AvitoParser
 				string path1 = Constants.Files.PropertiesVaritant(Enum.GetName(typeof(CategoryId), elem));
 				string path2 = Constants.Files.PropertyNamesVariant(Enum.GetName(typeof(CategoryId), elem));
 				string path3 = Constants.Files.PropertyValuesVariant(Enum.GetName(typeof(CategoryId), elem));
+				string path4 = Constants.Files.LinksVaritant(Enum.GetName(typeof(CategoryId), elem));
 
 				if (!File.Exists(path1))
 				{
+					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
 					File.Create(path1);
 				}
 
 				if (!File.Exists(path2))
 				{
+					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
 					File.Create(path2);
 				}
 
 				if (!File.Exists(path3))
 				{
+					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
 					File.Create(path3);
+				}
+
+				if (!File.Exists(path4))
+				{
+					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
+					File.Create(path4);
 				}
 			}
 
@@ -120,11 +130,10 @@ namespace AvitoParser
 
 					mode = ParserMode.Attributes;
 
-					Attributes:
-
+					
 					if (mode == ParserMode.Attributes)
 					{
-						var links = File.ReadAllLines(Constants.Files.LinksVaritant(nameof(categoryId)));
+						var links = File.ReadAllLines(Constants.Files.LinksVaritant(Enum.GetName(typeof(CategoryId), categoryId)));
 						var propertiesList = new List<Property>();
 
 						foreach (var url in links)

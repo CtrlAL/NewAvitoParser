@@ -58,20 +58,20 @@
 			public static string PropertyValues = "..\\..\\PropertyValues.csv";
 			public static string Links = "..\\..\\Links.csv";
 			public static string LogFile = "..\\..\\LogFile.csv";
-			public static string LinksVaritant(string variant) => $"..\\..\\Links{variant}.csv";
-			public static string PropertiesVaritant(string varitant) => $"..\\..\\Properties{varitant}.csv";
-			public static string PropertyNamesVariant(string varitant) => $"..\\..\\PropertyNames{varitant}.csv";
-			public static string PropertyValuesVariant(string varitant) => $"..\\..\\PropertyValues{varitant}.csv";
+			public static string LinksVaritant(string variant) => $"..\\..\\{variant}\\Links{variant}.csv";
+			public static string PropertiesVaritant(string variant) => $"..\\..\\{variant}\\Properties{variant}.csv";
+			public static string PropertyNamesVariant(string variant) => $"..\\..\\{variant}\\PropertyNames{variant}.csv";
+			public static string PropertyValuesVariant(string variant) => $"..\\..\\{variant}\\PropertyValues{variant}.csv";
 #else
 			public static string Properties = "bin/LINUX_Properties.csv";
 			public static string PropertyNames = "bin/LINUX_PropertyNames.csv";
 			public static string PropertyValues = "bin/LINUX_PropertyValues.csv";
 			public static string Links = "bin/Links.csv";
 			public static string LogFile = "bin/LogFile.csv";
-			public static string LinksVaritant(string variant) => $"bin/LINUX_Links{variant}.csv";
-			public static string PropertiesVaritant(string varitant) => $"bin/LINUX_Properties{varitant}.csv";
-			public static string PropertyNamesVariant(string varitant) => $"bin/LINUX_PropertyNames{varitant}.csv";
-			public static string PropertyValuesVariant(string varitant) => $"bin/LINUX_PropertyValues{varitant}.csv";
+			public static string LinksVaritant(string variant) => $"bin/{variant}/LINUX_Links{variant}.csv";
+			public static string PropertiesVaritant(string variant) => $"bin/{variant}/LINUX_Properties{variant}.csv";
+			public static string PropertyNamesVariant(string variant) => $"bin/{variant}/LINUX_PropertyNames{variant}.csv";
+			public static string PropertyValuesVariant(string variant) => $"bin/{variant}/LINUX_PropertyValues{variant}.csv";
 #endif
 		};
 	}

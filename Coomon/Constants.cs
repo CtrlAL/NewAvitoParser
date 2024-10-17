@@ -38,8 +38,10 @@
 			"https://www.avito.ru/all/nedvizhimost_za_rubezhom",
 		};
 
+
 		public static class Files
 		{
+#if OS_WINDOWS
 			public static string Properties = "..\\..\\Properties.csv";
 			public static string PropertyNames = "..\\..\\PropertyNames.csv";
 			public static string PropertyValues = "..\\..\\PropertyValues.csv";
@@ -49,7 +51,17 @@
 			public static string PropertiesVaritant(string varitant) => $"..\\..\\Properties{varitant}.csv";
 			public static string PropertyNamesVariant(string varitant) => $"..\\..\\PropertyNames{varitant}.csv";
 			public static string PropertyValuesVariant(string varitant) => $"..\\..\\PropertyValues{varitant}.csv";
-
+#else
+			public static string Properties = "../../Properties.csv";
+			public static string PropertyNames = "../../PropertyNames.csv";
+			public static string PropertyValues = "../../PropertyValues.csv";
+			public static string Links = "../../Links.csv";
+			public static string LogFile = "../../LogFile.csv";
+			public static string LinksVaritant(string variant) => $"../../Links{variant}.csv";
+			public static string PropertiesVaritant(string varitant) => $"../../Properties{varitant}.csv";
+			public static string PropertyNamesVariant(string varitant) => $"../../PropertyNames{varitant}.csv";
+			public static string PropertyValuesVariant(string varitant) => $"../../PropertyValues{varitant}.csv";
+#endif
 		};
 	}
 }

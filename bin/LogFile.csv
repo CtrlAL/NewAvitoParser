@@ -10,3 +10,27 @@ StackTrace:    at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Comman
 LastUrl: https://www.avito.ru/all/tovary_dlya_kompyutera?p=30
 
 }
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\NewAvitoParser\Program.cs:line 110
+LastUrl: https://www.avito.ru/moskva/telefony/iphone_16_pro_max_512_gb_4474360525?context=H4sIAAAAAAAA_0q0MrSqLrYyNLZSyslPTswJKMrML8osqVSyTrIysK4FBAAA__8LHhdkHwAAAA
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\NewAvitoParser\Program.cs:line 106
+LastUrl: https://www.avito.ru/nizhniy_novgorod/telefony/iphone_12_mini_64_gb_4272395190?slocation=621540&context=H4sIAAAAAAAA_0q0MrSqLrYyNLZSyslPTswJKMrML8osqVSyTrIysK4FBAAA__8LHhdkHwAAAA
+
+}

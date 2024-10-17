@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Collections;
 using NewAvitoParser;
+using NewAvitoParser.Enums;
 
 namespace AvitoParser
 {
@@ -41,16 +42,17 @@ namespace AvitoParser
 		
 		static void Main(string[] args)
 		{
+			Console.WriteLine("Set up Parser Mode/ Write 0 if u want pars Links/ Write 1 if u want parse attributes");
+			ParserMode mode = (ParserMode)int.Parse(Console.ReadLine());
+
+			Console.WriteLine(Constants.Files.Links);
+
 			var chromeOptions = new ChromeOptions();
 			ChromeOptions options = new ChromeOptions();
 			options.AddArgument("headless");
 			options.AddArgument("disable-gpu");
 			options.AddArgument("no-sandbox");
-			options.BinaryLocation = "/opt/google/chrome";
 			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
-
-
-			//options.BinaryLocation = "/opt/google/chrome/google-chrome";
 			options.AddArgument("--proxy-server=http://20.206.106.192:8123");
 
 			driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
@@ -62,7 +64,8 @@ namespace AvitoParser
 			using (driver)
 			{
 				try
-				{
+				{	
+					if(mode == ParserMode.Links)
 					{
 						var links = new List<string>();
 						foreach (var url in Constants.ElectronicSectionsList)
@@ -84,6 +87,9 @@ namespace AvitoParser
 
 					}
 
+					mode = ParserMode.Attributes;
+
+					if (mode == ParserMode.Attributes)
 					{
 						var links = File.ReadAllLines(Constants.Files.Links);
 						var propertiesList = new List<Property>();
@@ -132,6 +138,7 @@ namespace AvitoParser
 						+ $"LastUrl: {currentUrl}\n"
 						+ "\n}\n";
 
+					HelperCsv.WriteFile(Constants.Files.Properties, properties);
 					File.AppendAllText(Constants.Files.LogFile, log);
 					Console.WriteLine(ex.Message);
 					return;

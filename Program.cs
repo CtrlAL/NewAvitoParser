@@ -5,6 +5,7 @@ using OpenQA.Selenium.Chrome;
 using System.Collections;
 using NewAvitoParser;
 using NewAvitoParser.Enums;
+using CategoryId = NewAvitoParser.Coomon.Constants.CategoryId;
 
 namespace AvitoParser
 {
@@ -42,24 +43,54 @@ namespace AvitoParser
 		
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Set up Parser Mode/ Write 0 if u want pars Links/ Write 1 if u want parse attributes");
+			foreach (var elem in Enum.GetValues(typeof(CategoryId)))
+			{
+				string path1 = Constants.Files.PropertiesVaritant(Enum.GetName(typeof(CategoryId), elem));
+				string path2 = Constants.Files.PropertyNamesVariant(Enum.GetName(typeof(CategoryId), elem));
+				string path3 = Constants.Files.PropertyValuesVariant(Enum.GetName(typeof(CategoryId), elem));
+
+				if (!File.Exists(path1))
+				{
+					File.Create(path1);
+				}
+
+				if (!File.Exists(path2))
+				{
+					File.Create(path2);
+				}
+
+				if (!File.Exists(path3))
+				{
+					File.Create(path3);
+				}
+			}
+
+			Console.WriteLine("Set parser mode/ Enter 0 if you want to Links/ Enter 1 if you want to parse attributes from links file");
 			ParserMode mode = (ParserMode)int.Parse(Console.ReadLine());
+			CategoryId categoryId = default;
 
-			Console.WriteLine(Constants.Files.Links);
+			
+			Console.Write(
+				"Aloowed Categories for parse:\n" +
+				$"	0:{nameof(CategoryId.Electronis)}\n" +
+				$"	1:{nameof(CategoryId.RealEstate)}\n"
+			);
 
-			var chromeOptions = new ChromeOptions();
+			Console.WriteLine("Enter SectionId which u want to parse:");
+			categoryId = (CategoryId)int.Parse(Console.ReadLine());
+			
 			ChromeOptions options = new ChromeOptions();
 			options.AddArgument("headless");
 			options.AddArgument("disable-gpu");
 			options.AddArgument("no-sandbox");
-			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
-			options.AddArgument("--proxy-server=http://20.206.106.192:8123");
 
+			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
 			driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
 
 			var urlList = new HashSet<string>();
 			var properties = new HashSet<Property>();
 			string currentUrl = string.Empty;
+
 
 			using (driver)
 			{
@@ -68,7 +99,7 @@ namespace AvitoParser
 					if(mode == ParserMode.Links)
 					{
 						var links = new List<string>();
-						foreach (var url in Constants.ElectronicSectionsList)
+						foreach (var url in Constants.CategoriesList[(int)categoryId])
 						{
 							for (int i = 0; i < 100; i++)
 							{
@@ -89,9 +120,11 @@ namespace AvitoParser
 
 					mode = ParserMode.Attributes;
 
+					Attributes:
+
 					if (mode == ParserMode.Attributes)
 					{
-						var links = File.ReadAllLines(Constants.Files.Links);
+						var links = File.ReadAllLines(Constants.Files.LinksVaritant(nameof(categoryId)));
 						var propertiesList = new List<Property>();
 
 						foreach (var url in links)
@@ -147,7 +180,7 @@ namespace AvitoParser
 						+ "\n}\n";
 
 					Console.WriteLine(log);
-					HelperCsv.WriteFile(Constants.Files.Properties, properties);
+					HelperCsv.WriteFile(Constants.Files.PropertiesVaritant(Enum.GetName(typeof(CategoryId), categoryId)) , properties);
 					File.AppendAllText(Constants.Files.LogFile, log);
 					Console.WriteLine(ex.Message);
 					return;

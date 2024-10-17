@@ -38,6 +38,17 @@
 			"https://www.avito.ru/all/nedvizhimost_za_rubezhom",
 		};
 
+		public enum CategoryId
+		{
+			Electronis = 0,
+			RealEstate = 1,
+		}
+
+		public static List<string[]> CategoriesList = new List<string[]>
+		{
+			ElectronicSectionsList,
+			RealEstateList,
+		};
 
 		public static class Files
 		{

@@ -12,6 +12,7 @@ namespace NewAvitoParser
 				{
 					result.Add(new Property
 					{
+						SubCategoryName = property.SubCategoryName,
 						Name = property.Name,
 						Value = val,
 					});

@@ -5,25 +5,81 @@ using OpenQA.Selenium.Chrome;
 using System.Collections;
 using NewAvitoParser;
 using NewAvitoParser.Enums;
-using CategoryId = NewAvitoParser.Coomon.Constants.CategoryId;
-
+using Category = NewAvitoParser.Coomon.Avito.Category;
+using SubCategory = NewAvitoParser.Coomon.Avito.SubCategory;
 namespace AvitoParser
 {
 	internal class Program
 	{
-		public static async Task NavigateAcyns(WebDriver driver, string url)
+		private static IWebDriver _driver = null;
+		private static bool _createSatus = false;
+		static Program()
+		{
+			try
+			{
+
+
+				ChromeOptions options = new ChromeOptions();
+				options.AddArgument("headless");
+				options.AddArgument("disable-gpu");
+				options.AddArgument("no-sandbox");
+
+				_driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
+				_driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
+
+				ConnectToUrl("https://www.avito.ru/");
+
+				var categoryBoard = _driver.FindElement(By.ClassName("new-rubricator-content-root-_qZMR"));
+				var categoryInfo = _driver.FindElement(By.ClassName("rubricator-content-rightContent-zbUZa"));
+
+				var categoryList = categoryBoard.FindElement(By.ClassName("new-rubricator-content-leftcontent-_hhyV")).FindElements(By.ClassName("new-rubricator-content-rootCategory-S2VPI"));
+
+				for (int i = 0; i < categoryList.Count; i++)
+				{
+					categoryList[i].Click();
+					var category = categoryInfo.FindElement(By.ClassName("desktop-16cl456"));
+					Avito.CategoryList.Add(i, new Category { Name = category.Text, Link = category.GetAttribute("href") });
+
+					var subCategory = categoryInfo.FindElements(By.ClassName("new-rubricator-content-child-_bmMo"));
+
+					foreach (var item in subCategory)
+					{
+						var subSubCategories = item.FindElements(By.ClassName("desktop-mv9h2z"));
+						if (subSubCategories.Count == 0)
+						{
+							var link = item.FindElement(By.ClassName("desktop-rlpl5r")).GetAttribute("href");
+							var name = item.FindElement(By.ClassName("styles-module-root-bLKnd")).Text;
+							Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
+						}
+
+						foreach (var childCategory in subSubCategories)
+						{
+							var link = childCategory.FindElement(By.ClassName("desktop-mv9h2z")).GetAttribute("href");
+							var name = childCategory.FindElement(By.ClassName("styles-module-size_s-xb_uK")).Text;
+							Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
+						}
+					}
+				}
+			}
+			catch(Exception ex)
+			{
+				LogException(ex, string.Empty);
+				return;
+			}
+
+			_createSatus = true;
+		}
+		public static async Task NavigateAcyns(string url)
 		{
 			await Task.Run(() =>
-
 			{
-				driver.Navigate().GoToUrl(url);
-			}
-			);
+				_driver.Navigate().GoToUrl(url);
+			});
 		}
 
-		public static IEnumerable Conection(WebDriver driver, string url)
+		public static IEnumerable Conection(string url)
 		{
-			var task = Task.Run(() => NavigateAcyns(driver, url));
+			var task = Task.Run(() => NavigateAcyns(url));
 			int i = 0;
 			while (!task.IsCompleted)
 			{
@@ -33,106 +89,120 @@ namespace AvitoParser
 			}
 		}
 
-		public static void ConnectToUrl(WebDriver driver, string url)
+		public static void ConnectToUrl(string url)
 		{
-			foreach (var second in Conection(driver, url))
+			foreach (var second in Conection(url))
 			{
 				Console.WriteLine($"NavigateToUrl/{second}");
 			}
 		}
 		
-		static void Main(string[] args)
+		public static void SetDirictories()
 		{
-			foreach (var elem in Enum.GetValues(typeof(CategoryId)))
+			foreach (var elem in Avito.CategoryList)
 			{
-				string path1 = Constants.Files.PropertiesVaritant(Enum.GetName(typeof(CategoryId), elem));
-				string path2 = Constants.Files.PropertyNamesVariant(Enum.GetName(typeof(CategoryId), elem));
-				string path3 = Constants.Files.PropertyValuesVariant(Enum.GetName(typeof(CategoryId), elem));
-				string path4 = Constants.Files.LinksVaritant(Enum.GetName(typeof(CategoryId), elem));
+				string path1 = Constants.Files.PropertiesVaritant(elem.Value.Name);
+				string path2 = Constants.Files.PropertyNamesVariant(elem.Value.Name);
+				string path3 = Constants.Files.PropertyValuesVariant(elem.Value.Name);
+				string path4 = Constants.Files.LinksVaritant(elem.Value.Name);
 
 				if (!File.Exists(path1))
 				{
-					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
+					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
 					File.Create(path1);
 				}
 
 				if (!File.Exists(path2))
 				{
-					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
+					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
 					File.Create(path2);
 				}
 
 				if (!File.Exists(path3))
 				{
-					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
+					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
 					File.Create(path3);
 				}
 
 				if (!File.Exists(path4))
 				{
-					Directory.CreateDirectory($"..\\..\\{Enum.GetName(typeof(CategoryId), elem)}");
+					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
 					File.Create(path4);
 				}
 			}
+		}
+
+		static void Main(string[] args)
+		{
+			if (_createSatus == false)
+			{
+				Dispose();
+				return;
+			}
+
+			SetDirictories();
 
 			Console.WriteLine("Set parser mode/ Enter 0 if you want to Links/ Enter 1 if you want to parse attributes from links file");
-			ParserMode mode = (ParserMode)int.Parse(Console.ReadLine());
-			CategoryId categoryId = default;
-
+			int categoryId = default;
+			var mode = (ParserMode)int.Parse(Console.ReadLine());
 			
-			Console.Write(
-				"Aloowed Categories for parse:\n" +
-				$"	0:{nameof(CategoryId.Electronis)}\n" +
-				$"	1:{nameof(CategoryId.RealEstate)}\n"
-			);
+
+			Console.WriteLine("Aloowed Categories for parse:");
+			foreach (var category in Avito.CategoryList)
+			{
+				Console.WriteLine($"	{category.Key}:{category.Value.Name}");
+			}
+
 
 			Console.WriteLine("Enter SectionId which u want to parse:");
-			categoryId = (CategoryId)int.Parse(Console.ReadLine());
+			int.TryParse(Console.ReadLine(), out categoryId);
 			
-			ChromeOptions options = new ChromeOptions();
-			options.AddArgument("headless");
-			options.AddArgument("disable-gpu");
-			options.AddArgument("no-sandbox");
-
-			ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
-			driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
-
-			var urlList = new HashSet<string>();
 			var properties = new HashSet<Property>();
+			var propertiesNames = new List<PropNameMaper>();
+			var propertiesValues = new List<PropValueMaper>();
+
 			string currentUrl = string.Empty;
 
 
-			using (driver)
+			using (_driver)
 			{
 				try
 				{	
 					if(mode == ParserMode.Links)
 					{
-						var links = new List<string>();
-						foreach (var url in Constants.CategoriesList[(int)categoryId])
+						var links = new List<LinksMapper>();
+						foreach (var category in Avito.SubCategoryList.Where(item => item.CategoryId == categoryId))
 						{
+							var url = category.Link;
+
 							try
 							{
 								for (int i = 0; i < 100; i++)
 								{
-									ConnectToUrl(driver, url + $"?p={i}");
+									ConnectToUrl(url + $"?p={i}");
 									currentUrl = url + $"?p={i}";
 
 									Console.WriteLine($"LINK{i}:{currentUrl}");
-									var hrefs = driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
-									.Select(item => item.GetAttribute("href")).ToArray();
+									var hrefs = _driver.FindElements(By.XPath("//*[@id]/div/div/div[2]/div[2]/div/a"))
+										.Select(item => 
+											new LinksMapper {
+												Link = item.GetAttribute("href"),
+												SubCategoryName = category.Name
+											}
+										)
+										.ToArray();
 
 									links.AddRange(hrefs);
 								}
 							}
 							catch(Exception ex)
 							{
+								LogException(ex, currentUrl);
 								continue;
 							}
 						}
 
-						File.WriteAllLines(path: Constants.Files.Links, contents: links);
-
+						HelperCsv.WriteFile(path: Constants.Files.LinksVaritant(Avito.CategoryList[categoryId].Name), content: links);
 					}
 
 					mode = ParserMode.Attributes;
@@ -140,15 +210,19 @@ namespace AvitoParser
 					
 					if (mode == ParserMode.Attributes)
 					{
-						var links = File.ReadAllLines(Constants.Files.LinksVaritant(Enum.GetName(typeof(CategoryId), categoryId)));
+						var links = HelperCsv.ReadFile<LinksMapper>(Constants.Files.LinksVaritant(Avito.CategoryList[categoryId].Name));
+
 						var propertiesList = new List<Property>();
 
-						foreach (var url in links)
+						foreach (var link in links)
 						{
-							ConnectToUrl(driver, url);
+							var url = link.Link;
+							var subCategoryName = link.SubCategoryName;
+
+							ConnectToUrl(url);
 							currentUrl = url;
 							Console.WriteLine($"PRODUCT_LINK:{currentUrl}");
-							var attributes = driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
+							var attributes = _driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
 
 							if (attributes != null)
 							{
@@ -173,6 +247,7 @@ namespace AvitoParser
 
 										var property = new Property
 										{
+											SubCategoryName = subCategoryName,
 											Name = nameValuePare[0].Trim(' '),
 											Value = nameValuePare[1].Trim(' ')
 										};
@@ -184,28 +259,66 @@ namespace AvitoParser
 						}
 
 						properties = new HashSet<Property>(propertiesList);
+
+						propertiesNames = new HashSet<PropNameMaper>(properties.Select(p => new PropNameMaper
+						{
+							Id = 0,
+							Name = p.Name,
+							SubCategoryName = p.SubCategoryName,
+						})).Select((item, Index) =>
+							{
+								item.Id = Index;
+								return item;
+							}
+						).ToList();
+
+						propertiesValues = new HashSet<PropValueMaper>(properties.Select((item) => new PropValueMaper
+						{
+							Id = 0,
+							PropertyId = propertiesNames.Find(pn => item.Name == pn.Name).Id,
+							Value = item.Value,
+							SubCategoryName = item.SubCategoryName
+						})).Select((item, Index) =>
+						{
+							item.Id = Index;
+							return item;
+						}
+						).ToList();
 					}
 				}
 				catch (Exception ex)
 				{
-					string log = 
-						"ERROR:\n{\n" 
-						+ $"Message: {ex.Message}\n" 
-						+ $"StackTrace: {ex.StackTrace}\n"
-						+ $"LastUrl: {currentUrl}\n"
-						+ "\n}\n";
-
-					Console.WriteLine(log);
-					HelperCsv.WriteFile(Constants.Files.PropertiesVaritant(Enum.GetName(typeof(CategoryId), categoryId)) , properties);
-					File.AppendAllText(Constants.Files.LogFile, log);
-					Console.WriteLine(ex.Message);
-					return;
+					LogException(ex, currentUrl);
 				}
 				finally
 				{
-					HelperCsv.WriteFile(Constants.Files.Properties, properties);
-					driver.Quit();
+					HelperCsv.WriteFile(Constants.Files.PropertiesVaritant(Avito.CategoryList[categoryId].Name), properties);
+					HelperCsv.WriteFile(Constants.Files.PropertyNamesVariant(Avito.CategoryList[categoryId].Name), propertiesValues);
+					HelperCsv.WriteFile(Constants.Files.PropertyValuesVariant(Avito.CategoryList[categoryId].Name), propertiesNames);
+					Dispose();
 				}
+			}
+		}
+
+		public static void LogException(Exception exception, string url)
+		{
+			string log =
+						"ERROR:\n{\n"
+						+ $"Message: {exception.Message}\n"
+						+ $"StackTrace: {exception.StackTrace}\n"
+						+ $"LastUrl: {url}\n"
+						+ "\n}\n";
+
+			Console.WriteLine(log);
+			File.AppendAllText(Constants.Files.LogFile, log);
+			Console.WriteLine(exception.Message);
+		}
+		public static void Dispose()
+		{
+			_driver.Quit();
+			if (_driver != null)
+			{
+				_driver.Dispose();
 			}
 		}
 	}

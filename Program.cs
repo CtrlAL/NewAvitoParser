@@ -21,23 +21,24 @@ namespace AvitoParser
 				options.AddArgument("headless");
 				options.AddArgument("disable-gpu");
 				options.AddArgument("no-sandbox");
+				options.AddArgument("window-size=1920,1080");
 				_driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
 				_driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
-
+				
 				ConnectToUrl("https://www.avito.ru/");
 				var button = _driver.FindElement(By.XPath("//*[@id]/div/div[4]/div/div[1]/div/div/div[3]/div[1]/div/div/div[1]"));
+				
+				button.Click();
 				bool isChecked = button.Selected;
 				Console.WriteLine($"ButtonSelected: {isChecked}");
-				button.Click();
 
 				var categoryBoard = _driver.FindElement(By.ClassName("new-rubricator-content-root-_qZMR"));
-				var categoryInfo = _driver.FindElement(By.ClassName("rubricator-content-rightContent-zbUZa"));
-
 				var categoryList = categoryBoard.FindElement(By.ClassName("new-rubricator-content-leftcontent-_hhyV")).FindElements(By.ClassName("new-rubricator-content-rootCategory-S2VPI"));
 
 				for (int i = 0; i < categoryList.Count; i++)
 				{
 					categoryList[i].Click();
+					var categoryInfo = _driver.FindElement(By.ClassName("new-rubricator-content-rightContent-zbUZa"));
 					var category = categoryInfo.FindElement(By.ClassName("desktop-16cl456"));
 					Avito.CategoryList.Add(i, new Category { Name = category.Text, Link = category.GetAttribute("href") });
 

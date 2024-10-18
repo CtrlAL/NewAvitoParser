@@ -7,7 +7,6 @@ using NewAvitoParser;
 using NewAvitoParser.Enums;
 using Category = NewAvitoParser.Coomon.Avito.Category;
 using SubCategory = NewAvitoParser.Coomon.Avito.SubCategory;
-using System.Collections.ObjectModel;
 namespace AvitoParser
 {
 	internal class Program
@@ -19,7 +18,7 @@ namespace AvitoParser
 			try
 			{
 				ChromeOptions options = new ChromeOptions();
-				//options.AddArgument("--headless=new");
+				options.AddArgument("headless=new");
 				options.AddArgument("disable-gpu");
 				options.AddArgument("no-sandbox");
 				options.AddArgument("window-size=1920,1080");
@@ -30,11 +29,8 @@ namespace AvitoParser
 
 				ConnectToUrl("https://www.avito.ru/");
 				var button = _driver.FindElement(By.XPath("//*[@id]/div/div[4]/div/div[1]/div/div/div[3]/div[1]/div/div/div[1]"));
-				
 				button.Click();
-				bool isChecked = button.Selected;
-				Console.WriteLine($"ButtonSelected: {isChecked}");
-
+				
 				var categoryBoard = _driver.FindElement(By.ClassName("new-rubricator-content-root-_qZMR"));
 				var categoryList = categoryBoard.FindElement(By.ClassName("new-rubricator-content-leftcontent-_hhyV")).FindElements(By.ClassName("new-rubricator-content-rootCategory-S2VPI"));
 
@@ -52,7 +48,7 @@ namespace AvitoParser
                     }
 
                     var category = categoryInfo.FindElement(By.ClassName("desktop-16cl456"));
-					Avito.CategoryList.Add(i, new Category { Name = category.Text, Link = category.GetAttribute("href") });
+					Avito.CategoryList.Add(i, new Category { Name = category.Text.Replace("›", " ").Trim(), Link = category.GetAttribute("href") });
 
 					var subCategory = categoryInfo.FindElements(By.ClassName("new-rubricator-content-child-_bmMo"));
 
@@ -65,7 +61,7 @@ namespace AvitoParser
 							if (subSubCategories.Count == 0)
 							{
 								var link = item.FindElement(By.ClassName("desktop-rlpl5r")).GetAttribute("href");
-								var name = item.FindElement(By.ClassName("styles-module-root-bLKnd")).Text.Replace('>', ' ').Trim();
+								var name = item.FindElement(By.ClassName("styles-module-root-bLKnd")).Text.Replace("›", " ").Trim();
 								Console.WriteLine($"Категория:{name}");
 								Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
 							}

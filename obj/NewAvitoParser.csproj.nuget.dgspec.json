@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Larcev\\NewAvitoParser\\NewAvitoParser.csproj": {}
+    "C:\\Larcev\\Subject\\NewAvitoParser\\NewAvitoParser.csproj": {}
   },
   "projects": {
-    "C:\\Larcev\\NewAvitoParser\\NewAvitoParser.csproj": {
+    "C:\\Larcev\\Subject\\NewAvitoParser\\NewAvitoParser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Larcev\\NewAvitoParser\\NewAvitoParser.csproj",
+        "projectUniqueName": "C:\\Larcev\\Subject\\NewAvitoParser\\NewAvitoParser.csproj",
         "projectName": "NewAvitoParser",
-        "projectPath": "C:\\Larcev\\NewAvitoParser\\NewAvitoParser.csproj",
+        "projectPath": "C:\\Larcev\\Subject\\NewAvitoParser\\NewAvitoParser.csproj",
         "packagesPath": "C:\\Users\\sp1\\.nuget\\packages\\",
-        "outputPath": "C:\\Larcev\\NewAvitoParser\\obj\\",
+        "outputPath": "C:\\Larcev\\Subject\\NewAvitoParser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sp1\\AppData\\Roaming\\NuGet\\NuGet.Config",

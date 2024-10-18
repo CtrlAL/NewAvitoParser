@@ -11,23 +11,24 @@ namespace AvitoParser
 {
 	internal class Program
 	{
-		private static IWebDriver _driver = null;
+		private static ChromeDriver _driver = null;
 		private static bool _createSatus = false;
 		static Program()
 		{
 			try
 			{
-
-
 				ChromeOptions options = new ChromeOptions();
 				options.AddArgument("headless");
 				options.AddArgument("disable-gpu");
 				options.AddArgument("no-sandbox");
-
 				_driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
 				_driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
 
 				ConnectToUrl("https://www.avito.ru/");
+				var button = _driver.FindElement(By.XPath("//*[@id]/div/div[4]/div/div[1]/div/div/div[3]/div[1]/div/div/div[1]"));
+				bool isChecked = button.Selected;
+				Console.WriteLine($"ButtonSelected: {isChecked}");
+				button.Click();
 
 				var categoryBoard = _driver.FindElement(By.ClassName("new-rubricator-content-root-_qZMR"));
 				var categoryInfo = _driver.FindElement(By.ClassName("rubricator-content-rightContent-zbUZa"));
@@ -69,17 +70,10 @@ namespace AvitoParser
 
 			_createSatus = true;
 		}
-		public static async Task NavigateAcyns(string url)
-		{
-			await Task.Run(() =>
-			{
-				_driver.Navigate().GoToUrl(url);
-			});
-		}
 
 		public static IEnumerable Conection(string url)
 		{
-			var task = Task.Run(() => NavigateAcyns(url));
+			var task = _driver.Navigate().GoToUrlAsync(url);
 			int i = 0;
 			while (!task.IsCompleted)
 			{

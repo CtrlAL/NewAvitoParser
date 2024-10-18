@@ -7,6 +7,7 @@ using NewAvitoParser;
 using NewAvitoParser.Enums;
 using Category = NewAvitoParser.Coomon.Avito.Category;
 using SubCategory = NewAvitoParser.Coomon.Avito.SubCategory;
+using System.Collections.ObjectModel;
 namespace AvitoParser
 {
 	internal class Program
@@ -18,13 +19,15 @@ namespace AvitoParser
 			try
 			{
 				ChromeOptions options = new ChromeOptions();
-				options.AddArgument("headless");
+				//options.AddArgument("--headless=new");
 				options.AddArgument("disable-gpu");
 				options.AddArgument("no-sandbox");
 				options.AddArgument("window-size=1920,1080");
+
 				_driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
 				_driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
-				
+				_driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+
 				ConnectToUrl("https://www.avito.ru/");
 				var button = _driver.FindElement(By.XPath("//*[@id]/div/div[4]/div/div[1]/div/div/div[3]/div[1]/div/div/div[1]"));
 				
@@ -39,26 +42,46 @@ namespace AvitoParser
 				{
 					categoryList[i].Click();
 					var categoryInfo = _driver.FindElement(By.ClassName("new-rubricator-content-rightContent-zbUZa"));
-					var category = categoryInfo.FindElement(By.ClassName("desktop-16cl456"));
+
+					var moreButton = categoryInfo.FindElements(By.ClassName("new-rubricator-content-moreButton-i6UsT"));
+
+					//Clisk More Buttons for load attitional content
+                    foreach (var item in moreButton)
+                    {
+						item.Click();
+                    }
+
+                    var category = categoryInfo.FindElement(By.ClassName("desktop-16cl456"));
 					Avito.CategoryList.Add(i, new Category { Name = category.Text, Link = category.GetAttribute("href") });
 
 					var subCategory = categoryInfo.FindElements(By.ClassName("new-rubricator-content-child-_bmMo"));
 
 					foreach (var item in subCategory)
 					{
-						var subSubCategories = item.FindElements(By.ClassName("desktop-mv9h2z"));
-						if (subSubCategories.Count == 0)
+						try
 						{
-							var link = item.FindElement(By.ClassName("desktop-rlpl5r")).GetAttribute("href");
-							var name = item.FindElement(By.ClassName("styles-module-root-bLKnd")).Text;
-							Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
-						}
+							var subSubCategories = item.FindElements(By.ClassName("desktop-mv9h2z"));
 
-						foreach (var childCategory in subSubCategories)
+							if (subSubCategories.Count == 0)
+							{
+								var link = item.FindElement(By.ClassName("desktop-rlpl5r")).GetAttribute("href");
+								var name = item.FindElement(By.ClassName("styles-module-root-bLKnd")).Text.Replace('>', ' ').Trim();
+								Console.WriteLine($"Категория:{name}");
+								Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
+							}
+
+
+							foreach (var childCategory in subSubCategories)
+							{
+								var link = childCategory.GetAttribute("href");
+								var name = childCategory.FindElement(By.ClassName("styles-module-size_s-xb_uK")).Text;
+								Console.WriteLine($"Категория:{name}");
+								Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
+							}
+						}
+						catch(Exception ex)
 						{
-							var link = childCategory.FindElement(By.ClassName("desktop-mv9h2z")).GetAttribute("href");
-							var name = childCategory.FindElement(By.ClassName("styles-module-size_s-xb_uK")).Text;
-							Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
+							continue;
 						}
 					}
 				}
@@ -69,6 +92,7 @@ namespace AvitoParser
 				return;
 			}
 
+			_driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(0);
 			_createSatus = true;
 		}
 

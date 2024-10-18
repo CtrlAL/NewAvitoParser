@@ -108,3 +108,204 @@ StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response error
 LastUrl: 
 
 }
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-root\-_qZMR"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 35
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-root\-_qZMR"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 35
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".desktop\-mv9h2z"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebElement.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 59
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-leftcontent\-_hhyV"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebElement.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 36
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-root\-_qZMR"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 35
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-leftcontent\-_hhyV"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebElement.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 36
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-leftcontent\-_hhyV"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebElement.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 36
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-leftcontent\-_hhyV"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebElement.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 37
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id]/div/div[4]/div/div[1]/div/div/div[3]/div[1]/div/div/div[1]"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 30
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-root\-_qZMR"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 36
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".desktop\-mv9h2z"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebElement.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 68
+LastUrl: 
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.FindElements(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_1(ISearchContext context)
+   at OpenQA.Selenium.By.FindElements(ISearchContext context)
+   at OpenQA.Selenium.WebElement.FindElements(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 53
+LastUrl: 
+
+}
+ERROR:
+{
+Message: no such element: Unable to locate element: {"method":"css selector","selector":".new\-rubricator\-content\-root\-_qZMR"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at AvitoParser.Program..cctor() in C:\Larcev\Subject\NewAvitoParser\Program.cs:line 38
+LastUrl: 
+
+}

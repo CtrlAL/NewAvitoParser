@@ -6,9 +6,9 @@ namespace NewAvitoParser.Coomon
 	{
 		public struct SubCategory
 		{
-			public int CategoryId;
-			public string Name;
-			public string Link;
+			public int CategoryId { get; set; }
+			public string Name { get; set; }
+			public string Link { get; set; }
 		}
 		public struct Category
 		{
@@ -41,7 +41,14 @@ namespace NewAvitoParser.Coomon
 
 		public static void FromFile()
 		{
+			var categories = HelperCsv.ReadFile<CategoryMapper>("..\\..\\Categories.csv");
 
+			foreach (var category in categories)
+			{
+				CategoryList.Add(category.Id, new Category { Link = category.Link, Name = category.Name});
+			}
+
+			SubCategoryList = HelperCsv.ReadFile<SubCategory>("..\\..\\SubCategories.csv");
 		}
 	}
 }

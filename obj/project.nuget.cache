@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bnqwsfnh+ck=",
+  "dgSpecHash": "2aH5OO+lixM=",
   "success": true,
-  "projectFilePath": "C:\\Larcev\\Subject\\NewAvitoParser\\NewAvitoParser.csproj",
+  "projectFilePath": "C:\\Larcev\\Parser\\NewAvitoParser\\NewAvitoParser.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sp1\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
     "C:\\Users\\sp1\\.nuget\\packages\\selenium.webdriver\\4.25.0\\selenium.webdriver.4.25.0.nupkg.sha512",

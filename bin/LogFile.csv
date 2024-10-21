@@ -366,3 +366,105 @@ StackTrace:    at OpenQA.Selenium.Remote.HttpCommandExecutor.ExecuteAsync(Comman
 LastUrl: https://www.avito.ru/saratov/telefony/aksessuari-ASgBAgICAUSwwQ2O_Dc?p=22
 
 }
+ERROR:
+{
+Message: No properties are mapped for type 'NewAvitoParser.Coomon.Avito+SubCategory'.
+IWriter state:
+   Row: 2
+   Index: 0
+   HeaderRecord:
+2
+
+StackTrace:    at CsvHelper.Expressions.ObjectRecordWriter.CreateWriteDelegate[T](Type type)
+   at CsvHelper.Expressions.RecordWriter.GetWriteDelegate[T](RecordTypeInfo typeInfo)
+   at CsvHelper.Expressions.RecordManager.GetWriteDelegate[T](RecordTypeInfo typeInfo)
+   at CsvHelper.CsvWriter.WriteRecords[T](IEnumerable`1 records)
+   at NewAvitoParser.CsvServices.HelperCsv.WriteFile[T](String path, ICollection`1 content) in C:\Larcev\Parser\NewAvitoParser\CsvServices\HelperCsv.cs:line 15
+   at NewAvitoParser.Coomon.Avito.WriteToFile() in C:\Larcev\Parser\NewAvitoParser\Coomon\Avito.cs:line 35
+   at AvitoParser.Program..cctor() in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 97
+LastUrl: 
+
+}
+ERROR:
+{
+Message: Cannot start the driver service on http://localhost:52168/
+StackTrace:    at OpenQA.Selenium.DriverService.Start()
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.ExecuteAsync(Command commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities capabilities)
+   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)
+   at OpenQA.Selenium.Chromium.ChromiumDriver..ctor(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)
+   at AvitoParser.Program..cctor() in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 27
+LastUrl: 
+
+}
+ERROR:
+{
+Message: Header with name 'CategoryId'[0] was not found.
+Headers: 'Id', 'Name', 'Link'
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+IReader state:
+   ColumnCount: 3
+   CurrentIndex: -1
+   HeaderRecord:
+["Id","Name","Link"]
+IParser state:
+   ByteCount: 0
+   CharCount: 14
+   Row: 1
+   RawRow: 1
+   Count: 3
+   RawRecord:
+Id,Name,Link
+
+
+StackTrace:    at CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(HeaderValidatedArgs args)
+   at CsvHelper.CsvReader.ValidateHeader(Type type)
+   at CsvHelper.CsvReader.ValidateHeader[T]()
+   at CsvHelper.CsvReader.GetRecords[T]()+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at NewAvitoParser.CsvServices.HelperCsv.ReadFile[T](String path) in C:\Larcev\Parser\NewAvitoParser\CsvServices\HelperCsv.cs:line 26
+   at NewAvitoParser.Coomon.Avito.FromFile() in C:\Larcev\Parser\NewAvitoParser\Coomon\Avito.cs:line 51
+   at AvitoParser.Program..cctor() in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 37
+LastUrl: 
+Time: 21.10.2024 12:27:08
+
+}
+ERROR:
+{
+Message: Header with name 'CategoryId'[0] was not found.
+Headers: 'Id', 'Name', 'Link'
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+IReader state:
+   ColumnCount: 3
+   CurrentIndex: -1
+   HeaderRecord:
+["Id","Name","Link"]
+IParser state:
+   ByteCount: 0
+   CharCount: 14
+   Row: 1
+   RawRow: 1
+   Count: 3
+   RawRecord:
+Id,Name,Link
+
+
+StackTrace:    at CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(HeaderValidatedArgs args)
+   at CsvHelper.CsvReader.ValidateHeader(Type type)
+   at CsvHelper.CsvReader.ValidateHeader[T]()
+   at CsvHelper.CsvReader.GetRecords[T]()+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at NewAvitoParser.CsvServices.HelperCsv.ReadFile[T](String path) in C:\Larcev\Parser\NewAvitoParser\CsvServices\HelperCsv.cs:line 26
+   at NewAvitoParser.Coomon.Avito.FromFile() in C:\Larcev\Parser\NewAvitoParser\Coomon\Avito.cs:line 51
+   at AvitoParser.Program..cctor() in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 37
+LastUrl: 
+Time: 21.10.2024 12:28:11
+
+}

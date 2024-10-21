@@ -128,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Larcev\\Subject\\NewAvitoParser\\NewAvitoParser.csproj",
+      "projectUniqueName": "C:\\Larcev\\Parser\\NewAvitoParser\\NewAvitoParser.csproj",
       "projectName": "NewAvitoParser",
-      "projectPath": "C:\\Larcev\\Subject\\NewAvitoParser\\NewAvitoParser.csproj",
+      "projectPath": "C:\\Larcev\\Parser\\NewAvitoParser\\NewAvitoParser.csproj",
       "packagesPath": "C:\\Users\\sp1\\.nuget\\packages\\",
-      "outputPath": "C:\\Larcev\\Subject\\NewAvitoParser\\obj\\",
+      "outputPath": "C:\\Larcev\\Parser\\NewAvitoParser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sp1\\AppData\\Roaming\\NuGet\\NuGet.Config",

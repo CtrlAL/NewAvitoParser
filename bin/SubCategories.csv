@@ -1,0 +1,556 @@
+CategoryId,Name,Link
+0,Автомобили,https://www.avito.ru/saratov/avtomobili
+0,Вездеходы,https://www.avito.ru/saratov/mototsikly_i_mototehnika/vezdehody-ASgBAgICAUQ84AE
+0,Картинг,https://www.avito.ru/saratov/mototsikly_i_mototehnika/karting-ASgBAgICAUQ8zk0
+0,Квадроциклы и багги,https://www.avito.ru/saratov/mototsikly_i_mototehnika/kvadrotsikly-ASgBAgICAUQ83AE
+0,Мопеды и скутеры,https://www.avito.ru/saratov/mototsikly_i_mototehnika/mopedy_i_skutery-ASgBAgICAUQ82gE
+0,Мотоциклы,https://www.avito.ru/saratov/mototsikly_i_mototehnika/mototsikly-ASgBAgICAUQ80k0
+0,Снегоходы,https://www.avito.ru/saratov/mototsikly_i_mototehnika/snegohody-ASgBAgICAUQ8oiw
+0,Грузовики,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/gruzoviki-ASgBAgICAURUkAI
+0,Сельхозтехника,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/selhoztehnika-ASgBAgICAURUtCw
+0,Седельные тягачи,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/tyagachi-ASgBAgICAURU5E0
+0,Прицепы,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/pritsepy-ASgBAgICAURU4k0
+0,Экскаваторы,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/ekskavatory-ASgBAgICAURU5k0
+0,Автобусы,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/avtobusy-ASgBAgICAURUjgI
+0,Автодома,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/avtodoma-ASgBAgICAURUkk8
+0,Автокраны,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/avtokrany-ASgBAgICAURU2k0
+0,Бульдозеры,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/buldozery-ASgBAgICAURU3E0
+0,Коммунальная техника,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/kommunalnaya_tehnika-ASgBAgICAURUsCw
+0,Лёгкий коммерческий транспорт,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/legkiy_transport-ASgBAgICAURU3k0
+0,Навесное оборудование,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/navesnoe_oborudovanie-ASgBAgICAURUkoBZ
+0,Погрузчики,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/pogruzchiki-ASgBAgICAURU4E0
+0,Строительная техника,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/stroitelnaya_tehnika-ASgBAgICAURUkgI
+0,Техника для лесозаготовки,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/tehnika_dlya_lesozagotovki-ASgBAgICAURUsiw
+0,Другое,https://www.avito.ru/saratov/gruzoviki_i_spetstehnika/drugoe-ASgBAgICAURU2IBc
+0,Подъёмная техника,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/podyomnaya_tekhnika-ASgBAgICA0SYC8SfAZoL3J8B7o4O8qSNAw
+0,Землеройная техника,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/zemleroynaya_tekhnika-ASgBAgICA0SYC8SfAZoL3J8B7o4O9KSNAw
+0,Коммунальная техника,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/kommunalnaya_tekhnika-ASgBAgICA0SYC8SfAZoL3J8B7o4Owo_OAQ
+0,Дорожно-строительная техника,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/dorozhno_stroitelnaya_tekhnika-ASgBAgICA0SYC8SfAZoL3J8B7o4OwpaNAw
+0,Грузовой транспорт,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/gruzovoy_transport-ASgBAgICA0SYC8SfAZoL3J8B7o4OwI_OAQ
+0,Погрузочная техника,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/pogruzochnaya_tekhnika-ASgBAgICA0SYC8SfAZoL3J8B7o4OvpaNAw
+0,Навесное оборудование,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/navesnoe_oborudovanie-ASgBAgICA0SYC8SfAZoL3J8B7o4OwJaNAw
+0,Прицепы,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/pritsepy-ASgBAgICA0SYC8SfAZoL3J8B7o4OxJaNAw
+0,Сельхозтехника,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki/selhoztehnika-ASgBAgICA0SYC8SfAZoL3J8B7o4OyI_OAQ
+0,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki-ASgBAgICAkSYC8SfAZoL3J8B?f=ASgBAgICA0SYC8SfAZoL3J8B7o4O1o_OAQ
+0,Вёсельные лодки,https://www.avito.ru/saratov/vodnyy_transport/veselnye_lodki-ASgBAgICAUQONA
+0,Гидроциклы,https://www.avito.ru/saratov/vodnyy_transport/gidrotsikly-ASgBAgICAUQOPA
+0,Катера и яхты,https://www.avito.ru/saratov/vodnyy_transport/katera_i_yahty-ASgBAgICAUQOPg
+0,Моторные лодки и моторы,https://www.avito.ru/saratov/vodnyy_transport/motornye_lodki-ASgBAgICAUQOOA
+0,Запчасти,https://www.avito.ru/saratov/zapchasti_i_aksessuary/zapchasti-ASgBAgICAUQKJA
+0,"Шины, диски и колёса",https://www.avito.ru/saratov/zapchasti_i_aksessuary/shiny_diski_i_kolesa-ASgBAgICAUQKJg
+0,Аудио- и видеотехника,https://www.avito.ru/saratov/zapchasti_i_aksessuary/audio-_i_videotehnika-ASgBAgICAUQKKA
+0,Аксессуары,https://www.avito.ru/saratov/zapchasti_i_aksessuary/aksessuary-ASgBAgICAUQKnk0
+0,Багажники и фаркопы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/bagazhniki_i_farkopy-ASgBAgICAUQKyE0
+0,Инструменты,https://www.avito.ru/saratov/zapchasti_i_aksessuary/instrumenty-ASgBAgICAUQKxk0
+0,Прицепы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/pritsepy-ASgBAgICAUQKyk0
+0,Экипировка,https://www.avito.ru/saratov/zapchasti_i_aksessuary/ekipirovka-ASgBAgICAUQKoGQ
+0,Масла и автохимия,https://www.avito.ru/saratov/zapchasti_i_aksessuary/zapchasti_i_aksessuary/masla_i_avtohimiya-ASgBAgICAUQKnE0
+0,Противоугонные устройства,https://www.avito.ru/saratov/zapchasti_i_aksessuary/protivougonnye_ustroystva-ASgBAgICAUQKoE0
+0,GPS-навигаторы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/gps-navigatory-ASgBAgICAUQKKg
+1,Все квартиры,https://www.avito.ru/saratov/kvartiry/prodam-ASgBAgICAUSSA8YQ
+1,Вторичка,https://www.avito.ru/saratov/kvartiry/prodam/vtorichka-ASgBAgICAkSSA8YQ5geMUg
+1,Новостройки,https://www.avito.ru/saratov/kvartiry/prodam/novostroyka-ASgBAgICAkSSA8YQ5geOUg
+1,"Дома, дачи, коттеджи",https://www.avito.ru/saratov/doma_dachi_kottedzhi/prodam-ASgBAgICAUSUA9AQ
+1,Комнаты,https://www.avito.ru/saratov/komnaty/prodam-ASgBAgICAUSQA7wQ
+1,Квартиры,https://www.avito.ru/saratov/kvartiry/sdam/posutochno/-ASgBAgICAkSSA8gQ8AeSUg
+1,"Дома, дачи и коттеджи",https://www.avito.ru/saratov/doma_dachi_kottedzhi/sdam/posutochno-ASgBAgICAkSUA9IQoAjKVQ
+1,Комнаты и койко-места,https://www.avito.ru/saratov/komnaty/sdam/posutochno/-ASgBAgICAkSQA74QqAn4YA
+1,Отели,https://www.avito.ru/saratov/realty_rent/hotels-ASgBAgICAUSksxTkoY8D?f=ASgBAgICAkSksxTkoY8DyP4UAg
+1,Квартиры,https://www.avito.ru/saratov/kvartiry/sdam/na_dlitelnyy_srok-ASgBAgICAkSSA8gQ8AeQUg
+1,"Дома, дачи и коттеджи",https://www.avito.ru/saratov/doma_dachi_kottedzhi/sdam/na_dlitelnyy_srok-ASgBAgICAkSUA9IQoAjIVQ
+1,Комнаты и койко-места,https://www.avito.ru/saratov/komnaty/sdam/na_dlitelnyy_srok-ASgBAgICAkSQA74QqAn2YA
+1,Купить,https://www.avito.ru/saratov/kommercheskaya_nedvizhimost/prodam-ASgBAgICAUSwCNJW
+1,Снять,https://www.avito.ru/saratov/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW
+1,Земельные участки,https://www.avito.ru/saratov/zemelnye_uchastki
+1,Гаражи и машиноместа,https://www.avito.ru/saratov/garazhi_i_mashinomesta
+1,Зарубежная недвижимость,https://www.avito.ru/saratov/nedvizhimost_za_rubezhom
+2,"IT, интернет, телеком",https://www.avito.ru/saratov/vakansii/it_internet_telekom-ASgBAgICAUSOC_SdAQ
+2,Автомобильный бизнес,https://www.avito.ru/saratov/vakansii/avtomobilnyy_biznes-ASgBAgICAUSOC5CeAQ
+2,Административная работа,https://www.avito.ru/saratov/vakansii/administrativnaya_rabota-ASgBAgICAUSOC6aeAQ
+2,"Банки, инвестиции",https://www.avito.ru/saratov/vakansii/banki_investitsii-ASgBAgICAUSOC6ieAQ
+2,"Без опыта, студенты",https://www.avito.ru/saratov/vakansii/bez_opyta_studenty-ASgBAgICAUSOC4aeAQ
+2,"Бухгалтерия, финансы",https://www.avito.ru/saratov/vakansii/buhgalteriya_finansy-ASgBAgICAUSOC5KeAQ
+2,Высший менеджмент,https://www.avito.ru/saratov/vakansii/vysshiy_menedzhment-ASgBAgICAUSOC5SeAQ
+2,"Госслужба, НКО",https://www.avito.ru/saratov/vakansii/gossluzhba_nko-ASgBAgICAUSOC5aeAQ
+2,Домашний персонал,https://www.avito.ru/saratov/vakansii/domashniy_personal-ASgBAgICAUSOC5qHAg
+2,"ЖКХ, эксплуатация",https://www.avito.ru/saratov/vakansii/zhkh_ekspluatatsiya-ASgBAgICAUSOC5ieAQ
+2,"Искусство, развлечения",https://www.avito.ru/saratov/vakansii/iskusstvo_razvlecheniya-ASgBAgICAUSOC5qeAQ
+2,Консультирование,https://www.avito.ru/saratov/vakansii/konsultirovanie-ASgBAgICAUSOC5yeAQ
+2,Курьерская доставка,https://www.avito.ru/saratov/vakansii/kurerkaya-dostavka-ASgBAgICAUSOC7Ko1gI
+2,"Маркетинг, реклама, PR",https://www.avito.ru/saratov/vakansii/marketing_reklama_pr-ASgBAgICAUSOC56eAQ
+2,"Медицина, фармацевтика",https://www.avito.ru/saratov/vakansii/meditsina_farmatsevtika-ASgBAgICAUSOC_adAQ
+2,"Образование, наука",https://www.avito.ru/saratov/vakansii/obrazovanie_nauka-ASgBAgICAUSOC_6dAQ
+2,"Охрана, безопасность",https://www.avito.ru/saratov/vakansii/ohrana_bezopasnost-ASgBAgICAUSOC6CeAQ
+2,Продажи,https://www.avito.ru/saratov/vakansii/prodazhi-ASgBAgICAUSOC_idAQ
+2,"Производство, сырьё, с/х",https://www.avito.ru/saratov/vakansii/proizvodstvo_syryo_sh-ASgBAgICAUSOC6qeAQ
+2,Страхование,https://www.avito.ru/saratov/vakansii/strahovanie-ASgBAgICAUSOC_qdAQ
+2,Строительство,https://www.avito.ru/saratov/vakansii/stroitelstvo-ASgBAgICAUSOC4CeAQ
+2,Такси,https://www.avito.ru/saratov/vakansii/taksi-ASgBAgICAUSOC_ql1gI
+2,"Транспорт, логистика",https://www.avito.ru/saratov/vakansii/transport_logistika-ASgBAgICAUSOC_ydAQ
+2,"Туризм, рестораны",https://www.avito.ru/saratov/vakansii/turizm_restorany-ASgBAgICAUSOC4KeAQ
+2,Юриспруденция,https://www.avito.ru/saratov/vakansii/yurisprudentsiya-ASgBAgICAUSOC6SeAQ
+2,Управление персоналом,https://www.avito.ru/saratov/vakansii/upravlenie_personalom-ASgBAgICAUSOC6KeAQ
+2,"Фитнес, салоны красоты",https://www.avito.ru/saratov/vakansii/fitnes_salony_krasoty-ASgBAgICAUSOC4SeAQ
+2,"IT, интернет, телеком",https://www.avito.ru/saratov/rezume/it_internet_telekom-ASgBAgICAUSUC~yeAQ
+2,Автомобильный бизнес,https://www.avito.ru/saratov/rezume/avtomobilnyy_biznes-ASgBAgICAUSUC4ifAQ
+2,Административная работа,https://www.avito.ru/saratov/rezume/administrativnaya_rabota-ASgBAgICAUSUC56fAQ
+2,"Банки, инвестиции",https://www.avito.ru/saratov/rezume/banki_investitsii-ASgBAgICAUSUC6CfAQ
+2,"Без опыта, студенты",https://www.avito.ru/saratov/rezume/bez_opyta_studenty-ASgBAgICAUSUC_6eAQ
+2,"Бухгалтерия, финансы",https://www.avito.ru/saratov/rezume/buhgalteriya_finansy-ASgBAgICAUSUC4qfAQ
+2,Высший менеджмент,https://www.avito.ru/saratov/rezume/vysshiy_menedzhment-ASgBAgICAUSUC4yfAQ
+2,"Госслужба, НКО",https://www.avito.ru/saratov/rezume/gossluzhba_nko-ASgBAgICAUSUC46fAQ
+2,Домашний персонал,https://www.avito.ru/saratov/rezume/domashniy_personal-ASgBAgICAUSUC5iHAg
+2,"ЖКХ, эксплуатация",https://www.avito.ru/saratov/rezume/zhkh_ekspluatatsiya-ASgBAgICAUSUC5CfAQ
+2,"Искусство, развлечения",https://www.avito.ru/saratov/rezume/iskusstvo_razvlecheniya-ASgBAgICAUSUC5KfAQ
+2,Консультирование,https://www.avito.ru/saratov/rezume/konsultirovanie-ASgBAgICAUSUC5SfAQ
+2,Курьерская доставка,https://www.avito.ru/saratov/rezume/kurerskaya_dostavka-ASgBAgICAUSUC7ao1gI
+2,"Маркетинг, реклама, PR",https://www.avito.ru/saratov/rezume/marketing_reklama_pr-ASgBAgICAUSUC5afAQ
+2,"Медицина, фармацевтика",https://www.avito.ru/saratov/rezume/meditsina_farmatsevtika-ASgBAgICAUSUC~6eAQ
+2,"Образование, наука",https://www.avito.ru/saratov/rezume/obrazovanie_nauka-ASgBAgICAUSUC_aeAQ
+2,"Охрана, безопасность",https://www.avito.ru/saratov/rezume/ohrana_bezopasnost-ASgBAgICAUSUC5ifAQ
+2,Продажи,https://www.avito.ru/saratov/rezume/prodazhi-ASgBAgICAUSUC_CeAQ
+2,"Производство, сырьё, с/х",https://www.avito.ru/saratov/rezume/proizvodstvo_syryo_sh-ASgBAgICAUSUC6KfAQ
+2,Страхование,https://www.avito.ru/saratov/rezume/strahovanie-ASgBAgICAUSUC_KeAQ
+2,Строительство,https://www.avito.ru/saratov/rezume/stroitelstvo-ASgBAgICAUSUC_ieAQ
+2,Такси,https://www.avito.ru/saratov/rezume/taksi-ASgBAgICAUSUC7So1gI
+2,"Транспорт, логистика",https://www.avito.ru/saratov/rezume/transport_logistika-ASgBAgICAUSUC_SeAQ
+2,"Туризм, рестораны",https://www.avito.ru/saratov/rezume/turizm_restorany-ASgBAgICAUSUC_qeAQ
+2,Юриспруденция,https://www.avito.ru/saratov/rezume/yurisprudentsiya-ASgBAgICAUSUC5yfAQ
+2,Управление персоналом,https://www.avito.ru/saratov/rezume/upravlenie_personalom-ASgBAgICAUSUC5qfAQ
+2,"Фитнес, салоны красоты",https://www.avito.ru/saratov/rezume/fitnes_salony_krasoty-ASgBAgICAUSUC_yeAQ
+3,Автосервисы для автомобилей,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki-ASgBAgICAUSYC8SfAQ?f=ASgBAgICAkSYC8SfAZoL2p8B
+3,Автосервисы для грузовиков и спецтехники,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/avtoservisy_dlya_gruzovikov_i_spectehniki-ASgBAgICAkSYC8SfAZoLwJKRAw
+3,Автосервисы для другой техники,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/avtoservisy_dlya_drugoy_tehniki-ASgBAgICAkSYC8SfAZoLwpKRAw
+3,Аренда авто,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_avto-ASgBAgICAkSYC8SfAZoL_vcB
+3,Аренда спецтехники,https://www.avito.ru/saratov/predlozheniya_uslug/transport_perevozki/arenda_spetstekhniki-ASgBAgICAkSYC8SfAZoL3J8B
+3,По городу,https://www.avito.ru/saratov/predlozheniya_uslug/gruzoperevozki/po_gorodu-ASgBAgICAkSYC76IjgPc5RPGiI4D
+3,Между городами,https://www.avito.ru/saratov/predlozheniya_uslug/gruzoperevozki/mezhdu_gorodami-ASgBAgICAkSYC76IjgPc5RPIiI4D
+3,Международные,https://www.avito.ru/saratov/predlozheniya_uslug/gruzoperevozki/mezhdunarodnye-ASgBAgICAkSYC76IjgPc5RPKiI4D
+3,Трансфер,https://www.avito.ru/saratov/predlozheniya_uslug/passazhirskie_perevozki/transfer-ASgBAgICAkSYC8CIjgPe5RPMiI4D
+3,Авто под заказ,https://www.avito.ru/saratov/predlozheniya_uslug/passazhirskie_perevozki/avto_pod_zakaz-ASgBAgICAkSYC8CIjgPe5RPOiI4D
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/passazhirskie_perevozki/drugoe-ASgBAgICAkSYC8CIjgPe5RPQiI4D
+3,Грузчики,https://www.avito.ru/saratov/predlozheniya_uslug/gruzchiki_skladskie_uslugi/gruzchiki-ASgBAgICAkSYC8KIjgPg5RPSiI4D
+3,Фулфилмент,https://www.avito.ru/saratov/predlozheniya_uslug/gruzchiki_skladskie_uslugi/fulfilment-ASgBAgICAkSYC8KIjgPg5RPUiI4D
+3,Услуги эвакуатора,https://www.avito.ru/saratov/predlozheniya_uslug/uslugi_evakuatora-ASgBAgICAUSYC8SIjgM
+3,Ремонт квартир и домов под ключ,https://www.avito.ru/saratov/predlozheniya_uslug/remont_stroitelstvo/remont_kvartiri-ASgBAgICAkSYC8CfAcQVwPUB
+3,Дизайн интерьеров,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/dizajn_intererov-ASgBAgICAkSYC8CfAcQVsOmOAw
+3,Сантехника,https://www.avito.ru/saratov/predlozheniya_uslug/remont_stroitelstvo/santekhnika-ASgBAgICAkSYC8CfAcQVsvUB
+3,Электрика,https://www.avito.ru/saratov/predlozheniya_uslug/remont_stroitelstvo/elektrika-ASgBAgICAkSYC8CfAcQVsPUB
+3,Сборка и ремонт мебели,https://www.avito.ru/saratov/predlozheniya_uslug/remont_stroitelstvo/sborka_i_remont_mebeli-ASgBAgICAkSYC8CfAcQVrPUB
+3,Окна и балконы,https://www.avito.ru/saratov/predlozheniya_uslug/remont_stroitelstvo/ostekleniye_balkonov-ASgBAgICAkSYC8CfAcQVtvUB
+3,Поклейка обоев и малярные работы,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/poklejka_oboev_i_malyarnye_raboty-ASgBAgICAkSYC8CfAcQVyvr9Ag
+3,Потолки,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/potolki-ASgBAgICAkSYC8CfAcQVzvr9Ag
+3,Полы и напольные покрытия,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/poly_i_napolnye_pokrytiya-ASgBAgICAkSYC8CfAcQVzPr9Ag
+3,Штукатурные работы,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/shtukaturnye_raboty-ASgBAgICAkSYC8CfAcQVgv39Ag
+3,Двери,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/dveri-ASgBAgICAkSYC8CfAcQVwPr9Ag
+3,Плиточные работы,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/plitochnye_raboty-ASgBAgICAkSYC8CfAcQVyPr9Ag
+3,Столярные и плотницкие работы,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/stolyarnye_i_plotnitskie_raboty-ASgBAgICAkSYC8CfAcQVgP39Ag
+3,Гипсокартонные работы,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/gipsokartonnye_raboty-ASgBAgICAkSYC8CfAcQVvvr9Ag
+3,Высотные работы,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/vysotnye_raboty-ASgBAgICAkSYC8CfAcQVvPr9Ag
+3,Изоляция и утепление,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/izolyatsiya-ASgBAgICAkSYC8CfAcQVwvr9Ag
+3,Ремонт коммерческих помещений,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/remont_ofisa-ASgBAgICAkSYC8CfAcQVtPUB
+3,Вентиляция,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/ventilyatsiya-ASgBAgICAkSYC8CfAcQVuvr9Ag
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_otdelka/drugoe-ASgBAgICAkSYC8CfAcQV0Pr9Ag
+3,Строительство домов под ключ,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/stroitelstvo_domov_pod_klyuch-ASgBAgICAkSYC6Cf8QLejw_~nYsD
+3,"Строительство гаражей, бань, веранд",https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/stroitelstvo_bani_i_sauny-ASgBAgICAkSYC6Cf8QLejw~cn_EC
+3,"Отделка деревянных домов, бань, саун",https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/otdelka_derevyannyh_domov-ASgBAgICAkSYC6Cf8QLejw_ckIcD
+3,Кладочные работы,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/kladochnye_raboty-ASgBAgICAkSYC6Cf8QLejw_snYsD
+3,Кровельные работы,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/krovelnye_raboty-ASgBAgICAkSYC6Cf8QLejw_0nYsD
+3,"Сварка, ковка, металлоконструкции",https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/svarka_kovka_metallokonstrukcii-ASgBAgICAkSYC6Cf8QLejw_6nYsD
+3,Фундаментные и бетонные работы,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/fundamentnye_raboty-ASgBAgICAkSYC6Cf8QLejw~CnosD
+3,Алмазное сверление и резка,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/almaznoe_sverlenie_i_rezka-ASgBAgICAkSYC6Cf8QLejw_unYsD
+3,Снос и демонтаж,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/snos_i_demontazh-ASgBAgICAkSYC6Cf8QLejw_8nYsD
+3,Фасадные работы,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/fasadnye_raboty-ASgBAgICAkSYC6Cf8QLejw~AnosD
+3,Проектирование и сметы,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/proektirovanie_i_smety-ASgBAgICAkSYC6Cf8QLejw_4nYsD
+3,Разнорабочие,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/raznorabochie-ASgBAgICAkSYC6Cf8QLejw~MvY8D
+3,Изыскательные работы,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/izyskatelnye_raboty-ASgBAgICAkSYC6Cf8QLejw_qnYsD
+3,Лестницы,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/lestnicy-ASgBAgICAkSYC6Cf8QLejw_2nYsD
+3,Газификация,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/gazifikaciya-ASgBAgICAkSYC6Cf8QLejw_ynYsD
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/stroitelstvo/drugoe-ASgBAgICAkSYC6Cf8QLejw~EnosD
+3,Мастер на час,https://www.avito.ru/saratov/predlozheniya_uslug/master_na_chas-ASgBAgICAUSYC7zvAQ
+3,"Скважины, септики, колодцы",https://www.avito.ru/saratov/predlozheniya_uslug/sad_blagoustroystvo/skvazhiny_i_kolodcy-ASgBAgICAkSYC8KfAdCuDvK80AE
+3,Водоёмы и фонтаны,https://www.avito.ru/saratov/predlozheniya_uslug/sad_blagoustroystvo-ASgBAgICAUSYC8KfAQ?f=ASgBAgICAkSYC8KfAdCuDvS80AE
+3,Дорожное строительство,https://www.avito.ru/saratov/predlozheniya_uslug/sad_blagoustroystvo/dorozhnoe_stroitelstvo-ASgBAgICAkSYC8KfAdCuDva80AE
+3,"Ограждения, навесы, рольставни",https://www.avito.ru/saratov/predlozheniya_uslug/sad_blagoustroystvo/zabory_vorota_ograzhdeniya_navesy_rolstavni-ASgBAgICAkSYC8KfAdCuDvi80AE
+3,Земляные работы,https://www.avito.ru/saratov/predlozheniya_uslug/sad_blagoustroystvo/zemlyanye_raboty-ASgBAgICAkSYC8KfAdCuDvq80AE
+3,"Озеленение, уход за садом и огородом",https://www.avito.ru/saratov/predlozheniya_uslug/sad_blagoustroystvo/ozelenenie_uhod_za_sadom_i_ogorodom-ASgBAgICAkSYC8KfAdCuDvy80AE
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/sad_blagoustroystvo/drugoe-ASgBAgICAkSYC8KfAdCuDr7wmQI
+3,"Маникюр, педикюр",https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/manikyur_pedikyur-ASgBAgICAkSYC6qfAaIrgLgC
+3,Услуги парикмахера,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/uslugi_parikmahera-ASgBAgICAkSYC6qfAaIrhrgC
+3,"Ресницы, брови",https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/brovi_resnicy-ASgBAgICAkSYC6qfAaIrrOSKAw
+3,Перманентный макияж,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/permanentnyy_makiyazh-ASgBAgICAkSYC6qfAaIr9JSQAw
+3,Косметология,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/kosmetologiya-ASgBAgICAkSYC6qfAaIrkvCNAw
+3,Эпиляция,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/epilyaciya-ASgBAgICAkSYC6qfAaIrlPCNAw
+3,Макияж,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/makiyazh-ASgBAgICAkSYC6qfAaIr_rcC
+3,"СПА-услуги, массаж",https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/spa_uslugi_massazh-ASgBAgICAkSYC6qfAaIrgrgC
+3,"Тату, пирсинг",https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/tatu_pirsing-ASgBAgICAkSYC6qfAaIrhLgC
+3,Психология,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/psihologiya-ASgBAgICAkSYC6qfAaIrlvCNAw
+3,Диетология,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/dietologiya-ASgBAgICAkSYC6qfAaIrmvCNAw
+3,Аренда рабочего места,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/arenda_rabochego_mesta-ASgBAgICAkSYC6qfAaIrmPCNAw
+3,"Фитнес, йога",https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/fitnes_joga-ASgBAgICAkSYC6qfAaIrrLeOAw
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/krasota_zdorove/drugoe-ASgBAgICAkSYC6qfAaIriLgC
+3,Телевизоры,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/televizor-ASgBAgICAkSYC7T3Ad4V2vcB
+3,Мобильные устройства,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/mobilnyye_ustroystva-ASgBAgICAkSYC7T3Ad4V4vcB
+3,"Фото-, аудио-, видеотехника",https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/foto_audio_videotekhnika-ASgBAgICAkSYC7T3Ad4V5vcB
+3,"Кондиционеры, вентиляция",https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/kondicionery_ventilyaciya-ASgBAgICAkSYC7T3Ad4V0qCOAw
+3,"Стиральные, сушильные машины",https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/stiralnye_syshilnye_mashiny-ASgBAgICAkSYC7T3Ad4V1KCOAw
+3,Посудомоечные машины,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/posudomoechnye_mashiny-ASgBAgICAkSYC7T3Ad4V1qCOAw
+3,"Холодильники, морозильные камеры",https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/holodilniki_morozilnye_kamery-ASgBAgICAkSYC7T3Ad4V2KCOAw
+3,"Варочные панели, духовые шкафы",https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/kuhonnye_plity_varochnye_paneli-ASgBAgICAkSYC7T3Ad4V2qCOAw
+3,"Газовые котлы, водонагреватели",https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/gazovye_kotly_vodonagrevateli-ASgBAgICAkSYC7T3Ad4V3KCOAw
+3,Кофемашины,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/kofemashiny-ASgBAgICAkSYC7T3Ad4V3qCOAw
+3,"Швейные машины, оверлоки",https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/shvejnye%20mashiny_overloki-ASgBAgICAkSYC7T3Ad4V4KCOAw
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/remont_i_obsluzhivanie_tehniki/drugoe-ASgBAgICAkSYC7T3Ad4V7KCOAw
+3,Компьютеры,https://www.avito.ru/saratov/predlozheniya_uslug/komp%27yuternaya_pomoshch%27/komp%27yutery-ASgBAgICAkSYC_78jQOwvhOA_Y0D
+3,Принтеры,https://www.avito.ru/saratov/predlozheniya_uslug/komp%27yuternaya_pomoshch%27/printery-ASgBAgICAkSYC_78jQOwvhOC_Y0D
+3,Оборудование для майнинга,https://www.avito.ru/saratov/predlozheniya_uslug/komp%27yuternaya_pomoshch%27/oborudovanie_dlya_majninga-ASgBAgICAkSYC_78jQOwvhOE_Y0D
+3,Игровые приставки,https://www.avito.ru/saratov/predlozheniya_uslug/komp%27yuternaya_pomoshch%27/igrovye%20_pristavki-ASgBAgICAkSYC_78jQOwvhOG_Y0D
+3,ОС и программы,https://www.avito.ru/saratov/predlozheniya_uslug/komp%27yuternaya_pomoshch%27/OS_i_programmy-ASgBAgICAkSYC_78jQOwvhOI_Y0D
+3,Интернет и другие сети,https://www.avito.ru/saratov/predlozheniya_uslug/komp%27yuternaya_pomoshch%27/internet_i_drugie_seti-ASgBAgICAkSYC_78jQOwvhOK_Y0D
+3,Монтаж и установка техники,https://www.avito.ru/saratov/predlozheniya_uslug/ustanovka_tehniki-ASgBAgICAUSYC9r1AQ
+3,Аренда оборудования,https://www.avito.ru/saratov/predlozheniya_uslug/oborudovanie_proizvodstvo/arenda_oborudovaniya-ASgBAgICAkSYC7SfAaALhKAB
+3,"Производство, обработка",https://www.avito.ru/saratov/predlozheniya_uslug/oborudovanie_proizvodstvo/proizvodstvo_obrabotka-ASgBAgICAkSYC7SfAaALiKAB
+3,Предметы школы и вуза,https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/predmeti_shkoli_i_vuza-ASgBAgICAkSYC7afAaQrkrgC
+3,Иностранные языки,https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/inostrannie_yaziki-ASgBAgICAkSYC7afAaQrjrgC
+3,"Детское развитие, логопеды",https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/detskoe_razvitie_logopedi-ASgBAgICAkSYC7afAaQrjLgC
+3,"IT, бизнес",https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/it_biznes-ASgBAgICAkSYC7afAaQrsPCNAw
+3,"Дизайн, рисование",https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/dizajn_risovanie-ASgBAgICAkSYC7afAaQrlrgC
+3,"Красота, здоровье",https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/krasota_i_zdorov%27e-ASgBAgICAkSYC7afAaQrsvCNAw
+3,"Спорт, танцы",https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/sport_tanzi-ASgBAgICAkSYC7afAaQrmLgC
+3,Вождение,https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/vozhdenie-ASgBAgICAkSYC7afAaQrirgC
+3,"Музыка, театр",https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/muzika_teatr-ASgBAgICAkSYC7afAaQrkLgC
+3,Профессиональная подготовка,https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/proffesionalnaya_podgotovka-ASgBAgICAkSYC7afAaQrlLgC
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/obuchenie_kursy/drugoe-ASgBAgICAkSYC7afAaQrmrgC
+3,"Бухгалтерия, финансы",https://www.avito.ru/saratov/predlozheniya_uslug/delovye_uslugi/buhgalteriya_finansy-ASgBAgICAkSYC7KfAZ4L9p8B
+3,Консультирование,https://www.avito.ru/saratov/predlozheniya_uslug/delovye_uslugi/konsultirovanie-ASgBAgICAkSYC7KfAZ4L~J8B
+3,Консультации по недвижимости,https://www.avito.ru/saratov/predlozheniya_uslug/delovye_uslugi/konsultatsii_po_nedvizhimosti-ASgBAgICAkSYC7KfAZ4LxPORAw
+3,"Полиграфия, наружная реклама",https://www.avito.ru/saratov/predlozheniya_uslug/delovye_uslugi/poligrafiya_naruzhnaya_reklama-ASgBAgICAkSYC7KfAZ4LxvORAw
+3,Юридические услуги,https://www.avito.ru/saratov/predlozheniya_uslug/delovye_uslugi/yuridicheskie_uslugi-ASgBAgICAkSYC7KfAZ4LgqAB
+3,Страхование,https://www.avito.ru/saratov/predlozheniya_uslug/delovye_uslugi/strakhovanie-ASgBAgICAkSYC7KfAZ4LkJSBAw
+3,"Реклама, PR, маркетинг",https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/reklama_pr_marketing-ASgBAgICAkSYC6afAbYVrqSOAw
+3,Дизайн,https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/dizayn-ASgBAgICAkSYC6afAbYVwvORAw
+3,"Программирование, настройка CRM",https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/programmirovanie_nastrojka_CRM-ASgBAgICAkSYC6afAbYVsKSOAw
+3,Создание сайтов и приложений,https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/cozdanie_sajtov_i_prilozhenij-ASgBAgICAkSYC6afAbYVxKSOAw
+3,"Тексты, переводы",https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/teksty_perevody-ASgBAgICAkSYC6afAbYVmoyQAw
+3,"Маркетплейсы, сервисы объявлений",https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/marketplejsy_servisy_obyavlenij-ASgBAgICAkSYC6afAbYVoIyQAw
+3,"Продвижение, соцсети",https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/prodvizhenie_socseti-ASgBAgICAkSYC6afAbYVnoyQAw
+3,"SEO, контекстная реклама",https://www.avito.ru/saratov/predlozheniya_uslug/IT_dizayn_marketing/SEO_kontekstnaya_reklama-ASgBAgICAkSYC6afAbYVooyQAw
+3,Вывоз мусора и вторсырья,https://www.avito.ru/saratov/predlozheniya_uslug/vyvoz_musora-ASgBAgICAUSYC5zLjQM
+3,Генеральная уборка,https://www.avito.ru/saratov/predlozheniya_uslug/uborka_klining/generalnaya_uborka-ASgBAgICAkSYC7L3AdoVvPcB
+3,"Дезинфекция, дезинсекция",https://www.avito.ru/saratov/predlozheniya_uslug/uborka_klining/dezinfekciya_dezinsekciya-ASgBAgICAkSYC7L3AdoVvvcB
+3,Мойка окон,https://www.avito.ru/saratov/predlozheniya_uslug/uborka_klining/moyka_okon-ASgBAgICAkSYC7L3AdoVwPcB
+3,Простая уборка,https://www.avito.ru/saratov/predlozheniya_uslug/uborka_klining/prostaya_uborka-ASgBAgICAkSYC7L3AdoVwvcB
+3,Чистка ковров,https://www.avito.ru/saratov/predlozheniya_uslug/uborka_klining/chistka_kovrov-ASgBAgICAkSYC7L3AdoVxvcB
+3,Чистка мягкой мебели,https://www.avito.ru/saratov/predlozheniya_uslug/uborka_klining/chistka_myagkoy_mebeli-ASgBAgICAkSYC7L3AdoVyPcB
+3,Изготовление ключей,https://www.avito.ru/saratov/predlozheniya_uslug/bytovye_uslugi/izgotovlenie_klyuchey-ASgBAgICAkSYC7CfAZwL4p8B
+3,Пошив и ремонт одежды,https://www.avito.ru/saratov/predlozheniya_uslug/bytovye_uslugi/poshiv_i_remont_odezhdy-ASgBAgICAkSYC7CfAZwL5p8B
+3,Ремонт часов,https://www.avito.ru/saratov/predlozheniya_uslug/bytovye_uslugi/remont_chasov-ASgBAgICAkSYC7CfAZwL6p8B
+3,"Химчистка, стирка",https://www.avito.ru/saratov/predlozheniya_uslug/bytovye_uslugi/himchistka_stirka-ASgBAgICAkSYC7CfAZwL8p8B
+3,Ювелирные услуги,https://www.avito.ru/saratov/predlozheniya_uslug/bytovye_uslugi/yuvelirnye_uslugi-ASgBAgICAkSYC7CfAZwL9J8B
+3,"Праздники, мероприятия",https://www.avito.ru/saratov/predlozheniya_uslug/prazdniki_meropriyatiya-ASgBAgICAUSYC7yfAQ
+3,Доставка готовой еды,https://www.avito.ru/saratov/predlozheniya_uslug/dostavka_edy_i_produktov-ASgBAgICAUSYC7qfAQ?f=ASgBAgICAkSYC7qfAd7DDa7hOQ
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/dostavka_edy_i_produktov-ASgBAgICAUSYC7qfAQ?f=ASgBAgICAkSYC7qfAd7DDbDhOQ
+3,Фото- и видеосъёмка,https://www.avito.ru/saratov/predlozheniya_uslug/foto-_i_videosemka-ASgBAgICAUSYC8ifAQ
+3,"Няни, сиделки",https://www.avito.ru/saratov/predlozheniya_uslug/nyani_sidelki-ASgBAgICAUSYC6ifAQ
+3,Уход за животными,https://www.avito.ru/saratov/predlozheniya_uslug/uhod_za_zhivotnymi-ASgBAgICAUSYC8afAQ
+3,Искусство,https://www.avito.ru/saratov/predlozheniya_uslug/iskusstvo-ASgBAgICAUSYC9ifAQ
+3,"Охрана, безопасность",https://www.avito.ru/saratov/predlozheniya_uslug/ohrana_bezopasnost-ASgBAgICAUSYC7ifAQ
+3,Другое,https://www.avito.ru/saratov/predlozheniya_uslug/drugoe-ASgBAgICAUSYC8qfAQ
+4,Женская одежда,https://www.avito.ru/saratov/odezhda_obuv_aksessuary/zhenskaya_odezhda-ASgBAgICAUTeAtYL
+4,Женская обувь,https://www.avito.ru/saratov/odezhda_obuv_aksessuary/obuv_zhenskaya-ASgBAgICAUTeAryp1gI
+4,Мужская одежда,https://www.avito.ru/saratov/odezhda_obuv_aksessuary/muzhskaya_odezhda-ASgBAgICAUTeAtgL
+4,Мужская обувь,https://www.avito.ru/saratov/odezhda_obuv_aksessuary/obuv_muzhskaya-ASgBAgICAUTeArqp1gI
+4,"Сумки, рюкзаки и чемоданы",https://www.avito.ru/saratov/odezhda_obuv_aksessuary/sumki_ryukzaki_i_chemodany-ASgBAgICAUTeArip1gI
+4,Аксессуары,https://www.avito.ru/saratov/odezhda_obuv_aksessuary/kupit-aksessuary-ASgBAgICAUTeAtoL
+4,Для девочек,https://www.avito.ru/saratov/detskaya_odezhda_i_obuv/odezhda-dlya_devochek-ASgBAgICAUTkAuwL
+4,Для мальчиков,https://www.avito.ru/saratov/detskaya_odezhda_i_obuv/odezhda-dlya_malchikov-ASgBAgICAUTkAu4L
+4,Детские коляски,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/detskie_kolyaski-ASgBAgICAUT~AZgJ
+4,Детская мебель,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/detskaya_mebel-ASgBAgICAUT~AZQJ
+4,Велосипеды и самокаты,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/velosipedy_i_samokaty-ASgBAgICAUT~AaCGAQ
+4,Товары для кормления,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/tovary_dlya_kormleniya-ASgBAgICAUT~AZJM
+4,Автомобильные кресла,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/avtomobilnye_kresla-ASgBAgICAUT~AZIJ
+4,Постельные принадлежности,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/postelnye_prinadlezhnosti-ASgBAgICAUT~AcRP
+4,Игрушки,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/igrushki-ASgBAgICAUT~AZYJ
+4,Товары для купания,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/tovary_dlya_kupaniya-ASgBAgICAUT~AcZP
+4,Товары для школы,https://www.avito.ru/saratov/tovary_dlya_detey_i_igrushki/tovary_dlya_shkoly-ASgBAgICAUT~AchP
+4,Приборы и аксессуары,https://www.avito.ru/saratov/krasota_i_zdorove/pribory_i_aksessuary-ASgBAgICAUSEAqAJ
+4,Парфюмерия,https://www.avito.ru/saratov/krasota_i_zdorove/parfyumeriya-ASgBAgICAUSEAqYJ
+4,Средства гигиены,https://www.avito.ru/saratov/krasota_i_zdorove/sredstva_gigieny-ASgBAgICAUSEAqoJ
+4,Косметика,https://www.avito.ru/saratov/krasota_i_zdorove/kosmetika-ASgBAgICAUSEAqIJ
+4,Средства для волос,https://www.avito.ru/saratov/krasota_i_zdorove/sredstva_dlya_volos-ASgBAgICAUSEAspP
+4,Медицинские изделия,https://www.avito.ru/saratov/krasota_i_zdorove/meditsinskie_izdeliya-ASgBAgICAUSEAqgJ
+4,Другое,https://www.avito.ru/saratov/krasota_i_zdorove/drugoe-ASgBAgICAUSEAri~Ag
+4,Ювелирные изделия,https://www.avito.ru/saratov/chasy_i_ukrasheniya/yuvelirnye_izdeliya-ASgBAgICAUTQAYgG
+4,Часы,https://www.avito.ru/saratov/chasy_i_ukrasheniya/chasy-ASgBAgICAUTQAYYG
+4,Бижутерия,https://www.avito.ru/saratov/chasy_i_ukrasheniya/bizhuteriya-ASgBAgICAUTQAYoG
+5,Двери,https://www.avito.ru/saratov/remont_i_stroitelstvo/dveri-ASgBAgICAURYnEs
+5,Инструменты,https://www.avito.ru/saratov/remont_i_stroitelstvo/instrumenty-ASgBAgICAURYoks
+5,Камины и обогреватели,https://www.avito.ru/saratov/remont_i_stroitelstvo/kaminy_i_obogrevateli-ASgBAgICAURYlgI
+5,Окна и балконы,https://www.avito.ru/saratov/remont_i_stroitelstvo/okna_i_balkony-ASgBAgICAURYoEs
+5,Потолки,https://www.avito.ru/saratov/remont_i_stroitelstvo/potolki-ASgBAgICAURYnks
+5,Для сада и дачи,https://www.avito.ru/saratov/remont_i_stroitelstvo/dlya_sada_i_dachi-ASgBAgICAURYnAI
+5,"Сантехника, водоснабжение и сауна",https://www.avito.ru/saratov/remont_i_stroitelstvo/santehnika_i_sauna-ASgBAgICAURYngI
+5,Стройматериалы,https://www.avito.ru/saratov/remont_i_stroitelstvo/stroymaterialy-ASgBAgICAURYoAI
+5,Готовые строения и срубы,https://www.avito.ru/saratov/remont_i_stroitelstvo/gotovye_stroeniya_i_sruby-ASgBAgICAURYlrI6
+5,"Ворота, заборы и ограждения",https://www.avito.ru/saratov/remont_i_stroitelstvo/vorota_zabory_i_ograzhdeniya-ASgBAgICAURYkpmPAw
+5,"Кровати, диваны и кресла",https://www.avito.ru/saratov/mebel_i_interer/myagkaya_mebel-ASgBAgICAURaqgI
+5,"Шкафы, комоды и стеллажи",https://www.avito.ru/saratov/mebel_i_interer/shkafy_komodyi_stellazhi-ASgBAgICAURaqAI
+5,Столы и стулья,https://www.avito.ru/saratov/mebel_i_interer/stoly_i_stulya-ASgBAgICAURasAI
+5,Текстиль и ковры,https://www.avito.ru/saratov/mebel_i_interer/tekstil_i_kovry-ASgBAgICAURasgI
+5,Кухонные гарнитуры,https://www.avito.ru/saratov/mebel_i_interer/kuhonnye_garnitury-ASgBAgICAURazk8
+5,"Предметы интерьера, искусство",https://www.avito.ru/saratov/mebel_i_interer/predmety_interera_iskusstvo-ASgBAgICAURapAI
+5,Освещение,https://www.avito.ru/saratov/mebel_i_interer/osveschenie-ASgBAgICAURarAI
+5,Компьютерные столы и кресла,https://www.avito.ru/saratov/mebel_i_interer/kompyuternye_stoly_i_kresla-ASgBAgICAURa0E8
+5,Подставки и тумбы,https://www.avito.ru/saratov/mebel_i_interer/podstavki_i_tumby-ASgBAgICAURargI
+5,Другое,https://www.avito.ru/saratov/mebel_i_interer/drugoe-ASgBAgICAURatgI
+5,Для кухни,https://www.avito.ru/saratov/bytovaya_tehnika/dlya_kuhni-ASgBAgICAURglk8
+5,Для дома,https://www.avito.ru/saratov/bytovaya_tehnika/dlya_doma-ASgBAgICAURgpE8
+5,Климатическое оборудование,https://www.avito.ru/saratov/bytovaya_tehnika/klimaticheskoe_oborudovanie-ASgBAgICAURguE8
+5,Для индивидуального ухода,https://www.avito.ru/saratov/bytovaya_tehnika/dlya_individualnogo_uhoda-ASgBAgICAURgrk8
+5,Другое,https://www.avito.ru/saratov/bytovaya_tehnika/drugoe-ASgBAgICAURgvgs
+5,Продукты питания,https://www.avito.ru/saratov/produkty_pitaniya
+5,Комнатные растения,https://www.avito.ru/saratov/rasteniya/komnatnye_rasteniya-ASgBAgICAUT8lRW0zpED
+5,Букеты,https://www.avito.ru/saratov/rasteniya/bukety-ASgBAgICAUT8lRW2zpED
+5,Садовые растения,https://www.avito.ru/saratov/rasteniya/sadovye_rasteniya-ASgBAgICAUT8lRW4zpED
+5,"Семена, луковицы, клубни",https://www.avito.ru/saratov/rasteniya/semena__lukovicy__klubni-ASgBAgICAUT8lRW6zpED
+5,Товары для ухода за растениями,https://www.avito.ru/saratov/rasteniya/tovary_dlya_ukhoda_za_rasteniyami-ASgBAgICAUT8lRW8zpED
+5,Панно и искусственные растения,https://www.avito.ru/saratov/rasteniya/panno_i_iskusstvennye_rasteniya-ASgBAgICAUT8lRW~zpED
+5,Другое,https://www.avito.ru/saratov/rasteniya/drugoe-ASgBAgICAUT8lRXAzpED
+5,Посуда,https://www.avito.ru/saratov/posuda_i_tovary_dlya_kuhni/posuda-ASgBAgICAURmzAI
+5,Товары для кухни,https://www.avito.ru/saratov/posuda_i_tovary_dlya_kuhni/tovary_dlya_kuhni-ASgBAgICAURmzgI
+6,Для автомобилей,https://www.avito.ru/saratov/zapchasti_i_aksessuary/zapchasti/dlya_avtomobiley-ASgBAgICAkQKJKwJ~GM
+6,Для мототехники,https://www.avito.ru/saratov/zapchasti_i_aksessuary/zapchasti/dlya_mototehniki-ASgBAgICAkQKJKwJgmQ
+6,Для грузовиков и спецтехники,https://www.avito.ru/saratov/zapchasti_i_aksessuary/zapchasti/dlya_gruzovikov_i_spetstehniki-ASgBAgICAkQKJKwJjGQ
+6,Для водного транспорта,https://www.avito.ru/saratov/zapchasti_i_aksessuary/zapchasti/dlya_vodnogo_transporta-ASgBAgICAkQKJKwJlmQ
+6,Шины,https://www.avito.ru/saratov/zapchasti_i_aksessuary/shiny_diski_i_kolesa/shiny-ASgBAgICAkQKJooLgJ0B
+6,Шины для грузовиков и спецтехники,https://www.avito.ru/saratov/zapchasti_i_aksessuary/shiny_diski_i_kolesa/shiny_dlya_gruzovikov_i_spectekhniki-ASgBAgICAkQKJooLzuzbAg
+6,Мотошины,https://www.avito.ru/saratov/zapchasti_i_aksessuary/shiny_diski_i_kolesa/motoshiny-ASgBAgICAkQKJooL_pwB
+6,Диски,https://www.avito.ru/saratov/zapchasti_i_aksessuary/shiny_diski_i_kolesa/diski-ASgBAgICAkQKJooL_JwB
+6,Колпаки,https://www.avito.ru/saratov/zapchasti_i_aksessuary/shiny_diski_i_kolesa/kolpaki-ASgBAgICAkQKJooL~JwB
+6,Колёса,https://www.avito.ru/saratov/zapchasti_i_aksessuary/shiny_diski_i_kolesa/kolesa-ASgBAgICAkQKJooL~pwB
+6,Аудио- и видеотехника,https://www.avito.ru/saratov/zapchasti_i_aksessuary/audio-_i_videotehnika-ASgBAgICAUQKKA
+6,Аксессуары,https://www.avito.ru/saratov/zapchasti_i_aksessuary/aksessuary-ASgBAgICAUQKnk0
+6,Багажники и фаркопы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/bagazhniki_i_farkopy-ASgBAgICAUQKyE0
+6,Инструменты,https://www.avito.ru/saratov/zapchasti_i_aksessuary/instrumenty-ASgBAgICAUQKxk0
+6,Прицепы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/pritsepy-ASgBAgICAUQKyk0
+6,Экипировка,https://www.avito.ru/saratov/zapchasti_i_aksessuary/ekipirovka-ASgBAgICAUQKoGQ
+6,Масла и автохимия,https://www.avito.ru/saratov/zapchasti_i_aksessuary/zapchasti_i_aksessuary/masla_i_avtohimiya-ASgBAgICAUQKnE0
+6,Автосигнализации,https://www.avito.ru/saratov/zapchasti_i_aksessuary/protivougonnye_ustroystva/avtosignalizatsii-ASgBAgICAkQKoE3kDN61AQ
+6,Иммобилайзеры,https://www.avito.ru/saratov/zapchasti_i_aksessuary/protivougonnye_ustroystva/immobilayzery-ASgBAgICAkQKoE3kDOC1AQ
+6,Механические блокираторы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/protivougonnye_ustroystva/mehanicheskie_blokiratory-ASgBAgICAkQKoE3kDOK1AQ
+6,Спутниковые системы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/protivougonnye_ustroystva/sputnikovye_sistemy-ASgBAgICAkQKoE3kDOS1AQ
+6,GPS-навигаторы,https://www.avito.ru/saratov/zapchasti_i_aksessuary/gps-navigatory-ASgBAgICAUQKKg
+7,Мобильные телефоны,https://www.avito.ru/saratov/telefony/mobile-ASgBAgICAUSwwQ2I_Dc
+7,Аксессуары,https://www.avito.ru/saratov/telefony/aksessuari-ASgBAgICAUSwwQ2O_Dc
+7,Рации,https://www.avito.ru/saratov/telefony/ratsiya-ASgBAgICAUSwwQ2K_Dc
+7,Стационарные телефоны,https://www.avito.ru/saratov/telefony/statsionarnye_telefoni-ASgBAgICAUSwwQ2M_Dc
+7,Телевизоры и проекторы,https://www.avito.ru/saratov/audio_i_video/televizory_i_proektory-ASgBAgICAUSIArgJ
+7,Наушники,https://www.avito.ru/saratov/audio_i_video/naushniki-ASgBAgICAUSIAtRO
+7,"Акустика, колонки, сабвуферы",https://www.avito.ru/saratov/audio_i_video/akustika_kolonki_sabvufery-ASgBAgICAUSIAsxO
+7,Аксессуары,https://www.avito.ru/saratov/audio_i_video/aksessuary-ASgBAgICAUSIArwJ
+7,"Музыкальные центры, магнитолы",https://www.avito.ru/saratov/audio_i_video/muzykalnye_tsentry_magnitoly-ASgBAgICAUSIAtJO
+7,Усилители и ресиверы,https://www.avito.ru/saratov/audio_i_video/usiliteli_i_resivery-ASgBAgICAUSIArYJ
+7,Видеокамеры,https://www.avito.ru/saratov/audio_i_video/videokamery-ASgBAgICAUSIAroJ
+7,"Видео, DVD и Blu-ray плееры",https://www.avito.ru/saratov/audio_i_video/video_dvd_i_blu-ray_pleery-ASgBAgICAUSIArAJ
+7,Кабели и адаптеры,https://www.avito.ru/saratov/audio_i_video/kabeli_i_adaptery-ASgBAgICAUSIAs5O
+7,Музыка и фильмы,https://www.avito.ru/saratov/audio_i_video/muzyka_i_filmy-ASgBAgICAUSIArQJ
+7,Микрофоны,https://www.avito.ru/saratov/audio_i_video/mikrofony-ASgBAgICAUSIAtBO
+7,MP3-плееры,https://www.avito.ru/saratov/audio_i_video/mp3-pleery-ASgBAgICAUSIArIJ
+7,Комплектующие,https://www.avito.ru/saratov/tovary_dlya_kompyutera/komplektuyuschie-ASgBAgICAUTGB~pm
+7,Мониторы и запчасти,https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitory_i_zapshasty-ASgBAgICAUTGB4Bo
+7,Сетевое оборудование,https://www.avito.ru/saratov/tovary_dlya_kompyutera/setevoe_oborudovanie-ASgBAgICAUTGB75O
+7,Клавиатуры и мыши,https://www.avito.ru/saratov/tovary_dlya_kompyutera/klaviatury_i_myshi-ASgBAgICAUTGB7xO
+7,Аксессуары,https://www.avito.ru/saratov/tovary_dlya_kompyutera/aksessuary-ASgBAgICAUTGB5Ro
+7,Джойстики и рули,https://www.avito.ru/saratov/tovary_dlya_kompyutera/dzhoystiki_i_ruli-ASgBAgICAUTGB7ZO
+7,Флэшки и карты памяти,https://www.avito.ru/saratov/tovary_dlya_kompyutera/fleshki_i_karty_pamyati-ASgBAgICAUTGB8ZO
+7,Акустика,https://www.avito.ru/saratov/tovary_dlya_kompyutera/akustika-ASgBAgICAUTGB7RO
+7,Переносные жёсткие диски,https://www.avito.ru/saratov/tovary_dlya_kompyutera/perenosnye_zhestkie_diski-ASgBAgICAUTGB8JO
+7,Веб-камеры,https://www.avito.ru/saratov/tovary_dlya_kompyutera/veb-kamery-ASgBAgICAUTGB7hO
+7,ТВ-тюнеры,https://www.avito.ru/saratov/tovary_dlya_kompyutera/tv-tyunery-ASgBAgICAUTGB8RO
+7,Игровые приставки и аксессуары,https://www.avito.ru/saratov/igry_pristavki_i_programmy/igrovye_pristavki_i_aksessuary-ASgBAgICAUSSAsoJ
+7,Игры для приставок,https://www.avito.ru/saratov/igry_pristavki_i_programmy/igry_dlya_pristavok-ASgBAgICAUSSAsYJ
+7,Программы,https://www.avito.ru/saratov/igry_pristavki_i_programmy/programmy-ASgBAgICAUSSAs4J
+7,Компьютерные игры,https://www.avito.ru/saratov/igry_pristavki_i_programmy/kompyuternye_igry-ASgBAgICAUSSAsgJ
+7,Ноутбуки,https://www.avito.ru/saratov/noutbuki
+7,Системные блоки,https://www.avito.ru/saratov/nastolnye_kompyutery/sistemnye_bloki-ASgBAgICAUS02xKMqY0D
+7,Моноблоки,https://www.avito.ru/saratov/nastolnye_kompyutery/monobloki-ASgBAgICAUS02xKOqY0D
+7,Другое,https://www.avito.ru/saratov/nastolnye_kompyutery?f=ASgBAgICAUS02xKQqY0D
+7,Оборудование и аксессуары,https://www.avito.ru/saratov/fototehnika/oborudovanie_i_aksessuary-ASgBAgICAUS~A64X
+7,Объективы,https://www.avito.ru/saratov/fototehnika/obektivy-ASgBAgICAUS~A6YX
+7,Компактные фотоаппараты,https://www.avito.ru/saratov/fototehnika/kompaktnye_fotoapparaty-ASgBAgICAUS~A7IX
+7,Плёночные фотоаппараты,https://www.avito.ru/saratov/fototehnika/plenochnye_fotoapparaty-ASgBAgICAUS~A6gX
+7,Зеркальные фотоаппараты,https://www.avito.ru/saratov/fototehnika/zerkalnye_fotoapparaty-ASgBAgICAUS~A7AX
+7,Бинокли и телескопы,https://www.avito.ru/saratov/fototehnika/binokli_i_teleskopy-ASgBAgICAUS~A6IX
+7,Планшеты,https://www.avito.ru/saratov/planshety_i_elektronnye_knigi/planshety-ASgBAgICAUSYAoZO
+7,Аксессуары,https://www.avito.ru/saratov/planshety_i_elektronnye_knigi/aksessuary-ASgBAgICAUSYAopO
+7,Электронные книги,https://www.avito.ru/saratov/planshety_i_elektronnye_knigi/elektronnye_knigi-ASgBAgICAUSYAohO
+7,"МФУ, копиры и сканеры",https://www.avito.ru/saratov/orgtehnika_i_rashodniki/mfu_kopiry_i_skanery-ASgBAgICAUSoAvpO
+7,Принтеры,https://www.avito.ru/saratov/orgtehnika_i_rashodniki/printery-ASgBAgICAUSoAoQK
+7,Канцелярия,https://www.avito.ru/saratov/orgtehnika_i_rashodniki/kantselyariya-ASgBAgICAUSoAogK
+7,"ИБП, сетевые фильтры",https://www.avito.ru/saratov/orgtehnika_i_rashodniki/ibp_setevye_filtry-ASgBAgICAUSoAv5O
+7,Телефония,https://www.avito.ru/saratov/orgtehnika_i_rashodniki/telefoniya-ASgBAgICAUSoAvxO
+7,Уничтожители бумаг,https://www.avito.ru/saratov/orgtehnika_i_rashodniki/unichtozhiteli_bumag-ASgBAgICAUSoAoBP
+7,Расходные материалы,https://www.avito.ru/saratov/orgtehnika_i_rashodniki/rashodnye_materialy-ASgBAgICAUSoAoYK
+8,"Карты, купоны",https://www.avito.ru/saratov/bilety_i_puteshestviya/karty_kupony-ASgBAgICAUS0AqKKAQ
+8,Концерты,https://www.avito.ru/saratov/bilety_i_puteshestviya/kontserty-ASgBAgICAUS0ApYK
+8,Путешествия,https://www.avito.ru/saratov/bilety_i_puteshestviya/puteshestviya-ASgBAgICAUS0ApgK
+8,Спорт,https://www.avito.ru/saratov/bilety_i_puteshestviya/sport-ASgBAgICAUS0ApoK
+8,"Театр, опера, балет",https://www.avito.ru/saratov/bilety_i_puteshestviya/teatr_opera_balet-ASgBAgICAUS0ApwK
+8,"Цирк, кино",https://www.avito.ru/saratov/bilety_i_puteshestviya/tsirk_kino-ASgBAgICAUS0AqSKAQ
+8,"Шоу, мюзикл",https://www.avito.ru/saratov/bilety_i_puteshestviya/shou_myuzikl-ASgBAgICAUS0AqCKAQ
+8,ВМХ,https://www.avito.ru/saratov/velosipedy/bmx-ASgBAgICAUS4AqYK
+8,Городские,https://www.avito.ru/saratov/velosipedy/gorodskie-ASgBAgICAUS4AuLTkAM
+8,Шоссейные,https://www.avito.ru/saratov/velosipedy/shosseinye-ASgBAgICAUS4Aq4K
+8,Детские,https://www.avito.ru/saratov/velosipedy/detskie-ASgBAgICAUS4AqoK
+8,Горные,https://www.avito.ru/saratov/velosipedy/gornye-ASgBAgICAUS4AqgK
+8,Запчасти и аксессуары,https://www.avito.ru/saratov/velosipedy/zapchasti_i_aksessuary-ASgBAgICAUS4AqQK
+8,"Журналы, газеты, брошюры",https://www.avito.ru/saratov/knigi_i_zhurnaly/zhurnaly_gazety_broshyury-ASgBAgICAUTOAugK
+8,Книги,https://www.avito.ru/saratov/knigi_i_zhurnaly/knigi-ASgBAgICAUTOAuoK
+8,Учебная литература,https://www.avito.ru/saratov/knigi_i_zhurnaly/uchebnaya_literatura-ASgBAgICAUTOApRM
+8,Банкноты,https://www.avito.ru/saratov/kollektsionirovanie/banknoty-ASgBAgICAUQcgAE
+8,Билеты,https://www.avito.ru/saratov/kollektsionirovanie/bilety-ASgBAgICAUQcggE
+8,"Вещи знаменитостей, автографы",https://www.avito.ru/saratov/kollektsionirovanie/veschi_znamenitostey/avtografy-ASgBAgICAUQchAE
+8,Военные вещи,https://www.avito.ru/saratov/kollektsionirovanie/voennye_veschi-ASgBAgICAUQchgE
+8,Грампластинки,https://www.avito.ru/saratov/kollektsionirovanie/gramplastinki-ASgBAgICAUQcjkw
+8,Документы,https://www.avito.ru/saratov/kollektsionirovanie/dokumenty-ASgBAgICAUQciAE
+8,"Жетоны, медали, значки",https://www.avito.ru/saratov/kollektsionirovanie/zhetony_medali_znachki-ASgBAgICAUQcigE
+8,Игры,https://www.avito.ru/saratov/kollektsionirovanie/igry-ASgBAgICAUQcjAE
+8,Календари,https://www.avito.ru/saratov/kollektsionirovanie/kalendari-ASgBAgICAUQcjgE
+8,Картины,https://www.avito.ru/saratov/kollektsionirovanie/kartiny-ASgBAgICAUQcoBc
+8,Киндер-сюрприз,https://www.avito.ru/saratov/kollektsionirovanie/kinder-syurpriz-ASgBAgICAUQckAE
+8,Конверты и почтовые карточки,https://www.avito.ru/saratov/kollektsionirovanie/konverty_i_pochtovye_kartochki-ASgBAgICAUQclAE
+8,Марки,https://www.avito.ru/saratov/kollektsionirovanie/marki-ASgBAgICAUQclgE
+8,Модели,https://www.avito.ru/saratov/kollektsionirovanie/modeli-ASgBAgICAUQcmAE
+8,Монеты,https://www.avito.ru/saratov/kollektsionirovanie/monety-ASgBAgICAUQcmgE
+8,Открытки,https://www.avito.ru/saratov/kollektsionirovanie/otkrytki-ASgBAgICAUQcnAE
+8,"Пепельницы, зажигалки",https://www.avito.ru/saratov/kollektsionirovanie/pepelnicy_zazhigalki-ASgBAgICAUQcoAE
+8,Пластиковые карточки,https://www.avito.ru/saratov/kollektsionirovanie/plastikovye_kartochki-ASgBAgICAUQcngE
+8,Спортивные карточки,https://www.avito.ru/saratov/kollektsionirovanie/sportivnye_kartochki-ASgBAgICAUQcogE
+8,"Фотографии, письма",https://www.avito.ru/saratov/kollektsionirovanie/fotografii_pisma-ASgBAgICAUQcpAE
+8,"Этикетки, бутылки, пробки",https://www.avito.ru/saratov/kollektsionirovanie/etiketki_butylki_probki-ASgBAgICAUQcpgE
+8,Другое,https://www.avito.ru/saratov/kollektsionirovanie/drugoe-ASgBAgICAUQckEw
+8,"Аккордеоны, гармони, баяны",https://www.avito.ru/saratov/muzykalnye_instrumenty/akkordeony_garmoni_bayany-ASgBAgICAUTEAsQK
+8,Гитары и другие струнные,https://www.avito.ru/saratov/muzykalnye_instrumenty/gitary_i_strunnye-ASgBAgICAUTEAsYK
+8,Духовые,https://www.avito.ru/saratov/muzykalnye_instrumenty/duhovye-ASgBAgICAUTEAsoK
+8,Клавишные и синтезаторы,https://www.avito.ru/saratov/muzykalnye_instrumenty/klavishnye_i_sintezatory-ASgBAgICAUTEAswK
+8,Скрипки и другие смычковые,https://www.avito.ru/saratov/muzykalnye_instrumenty/skripki_i_smychkovye-ASgBAgICAUTEAvRO
+8,Ударные,https://www.avito.ru/saratov/muzykalnye_instrumenty/udarnye-ASgBAgICAUTEAs4K
+8,Для студии и концертов,https://www.avito.ru/saratov/muzykalnye_instrumenty/dlya_studii_i_kontsertov-ASgBAgICAUTEAsgK
+8,Аксессуары,https://www.avito.ru/saratov/muzykalnye_instrumenty/aksessuary-ASgBAgICAUTEAtAK
+8,"Ножи, мультитулы, топоры",https://www.avito.ru/saratov/ohota_i_rybalka/ohota_i_ribalka/nozhi_multituly_topory-ASgBAgICAUSY5hTiiZAD
+8,Охота,https://www.avito.ru/saratov/ohota_i_rybalka/ohota_i_ribalka/ohota-ASgBAgICAUSY5hTkiZAD
+8,Рыбалка,https://www.avito.ru/saratov/ohota_i_rybalka/ohota_i_ribalka/ribalka-ASgBAgICAUSY5hTmiZAD
+8,Костюмы для охоты и рыбалки,https://www.avito.ru/saratov/ohota_i_rybalka/ohota_i_ribalka/kostumy_dlya_ohoty_i_ribalki-ASgBAgICAUSY5hToiZAD
+8,Бильярд и боулинг,https://www.avito.ru/saratov/sport_i_otdyh/bilyard_i_bouling-ASgBAgICAUTKAoJP
+8,Дайвинг и водный спорт,https://www.avito.ru/saratov/sport_i_otdyh/dayving_i_vodnyy_sport-ASgBAgICAUTKAtgK
+8,Единоборства,https://www.avito.ru/saratov/sport_i_otdyh/edinoborstva-ASgBAgICAUTKAoRP
+8,Зимний спорт,https://www.avito.ru/saratov/sport_i_otdyh/zimniy_sport-ASgBAgICAUTKAtoK
+8,Игры с мячом,https://www.avito.ru/saratov/sport_i_otdyh/igry_s_myachom-ASgBAgICAUTKAtwK
+8,Настольные игры,https://www.avito.ru/saratov/sport_i_otdyh/nastolnye_igry-ASgBAgICAUTKAoZP
+8,Пейнтбол и страйкбол,https://www.avito.ru/saratov/sport_i_otdyh/peyntbol_i_straykbol-ASgBAgICAUTKAohP
+8,Ролики и скейтбординг,https://www.avito.ru/saratov/sport_i_otdyh/roliki_i_skeytbording-ASgBAgICAUTKAopP
+8,"Теннис, бадминтон, пинг-понг",https://www.avito.ru/saratov/sport_i_otdyh/tennis_badminton_ping-pong-ASgBAgICAUTKAoxP
+8,Туризм и отдых на природе,https://www.avito.ru/saratov/sport_i_otdyh/turizm_i_otdyh_na_prirode-ASgBAgICAUTKAt4K
+8,Фитнес и тренажёры,https://www.avito.ru/saratov/sport_i_otdyh/fitnes_i_trenazhery-ASgBAgICAUTKAuAK
+8,Спортивное питание,https://www.avito.ru/saratov/sport_i_otdyh/sportivnoe_pitanie-ASgBAgICAUTKAvK9Ag
+8,Другое,https://www.avito.ru/saratov/sport_i_otdyh/drugoe-ASgBAgICAUTKAuIK
+9,Собаки,https://www.avito.ru/saratov/sobaki
+9,Кошки,https://www.avito.ru/saratov/koshki
+9,Птицы,https://www.avito.ru/saratov/ptitsy
+9,Аквариум,https://www.avito.ru/saratov/akvarium
+9,Амфибии,https://www.avito.ru/saratov/drugie_zhivotnye/amfibii-ASgBAgICAUSyA8oV
+9,Грызуны,https://www.avito.ru/saratov/drugie_zhivotnye/gryzuny-ASgBAgICAUSyA8wV
+9,Кролики,https://www.avito.ru/saratov/drugie_zhivotnye/kroliki-ASgBAgICAUSyA7BL
+9,Лошади,https://www.avito.ru/saratov/drugie_zhivotnye/loshadi-ASgBAgICAUSyA84V
+9,Рептилии,https://www.avito.ru/saratov/drugie_zhivotnye/reptilii-ASgBAgICAUSyA9AV
+9,С/х животные,https://www.avito.ru/saratov/drugie_zhivotnye/sh_zhivotnye-ASgBAgICAUSyA7JL
+9,Хорьки,https://www.avito.ru/saratov/drugie_zhivotnye/horki-ASgBAgICAUSyA65L
+9,Другое,https://www.avito.ru/saratov/drugie_zhivotnye/zhivotnie/drugoe-ASgBAgICAUSyA9IV
+9,Товары для животных,https://www.avito.ru/saratov/tovary_dlya_zhivotnyh
+10,Промышленное,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/promyshlennoe-ASgBAgICAUTqAv5P
+10,Логистика и склад,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/logistika_i_sklad-ASgBAgICAUTqAqC8iwM
+10,Торговое,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/torgovoe-ASgBAgICAUTqAtifjgM
+10,Пищевое,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/pishchevoe-ASgBAgICAUTqAvpP
+10,Для салона красоты,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/dlya_salona_krasoty-ASgBAgICAUTqAvxP
+10,Для автобизнеса,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/dlya_avtobiznesa-ASgBAgICAUTqAqK8iwM
+10,Майнинг,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/majning_kriptovaljut-ASgBAgICAUTqAtSJ~wI
+10,Лабораторное,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/laboratornoe-ASgBAgICAUTqAtqJ~wI
+10,Медицинское,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/meditsinskoe-ASgBAgICAUTqAtyJ~wI
+10,Телекоммуникационное,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/telekommunikatsionnoe-ASgBAgICAUTqAt6J~wI
+10,Другое,https://www.avito.ru/saratov/oborudovanie_dlya_biznesa/drugoe-ASgBAgICAUTqArYM
+10,Автобизнес,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/avtobiznes-ASgBAgICAkToDMj1jgO2rRSslY8D
+10,Арендный бизнес,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/arendnyi_biznes-ASgBAgICAkToDMj1jgO2rRSulY8D
+10,Красота и здоровье,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/krasota_i_zdorove-ASgBAgICAkToDMj1jgO2rRSwlY8D
+10,Общественное питание,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/obshhestvennoe_pitanie-ASgBAgICAkToDMj1jgO2rRSylY8D
+10,Производство,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/proizvodstvo-ASgBAgICAkToDMj1jgO2rRS0lY8D
+10,Пункты выдачи заказов,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/punkty_vydaci_zakazov-ASgBAgICAkToDMj1jgO2rRS2lY8D
+10,Сельское хозяйство,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/selskoe_xoziaistvo-ASgBAgICAkToDMj1jgO2rRS4lY8D
+10,Строительство,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/stroitelstvo-ASgBAgICAkToDMj1jgO2rRS6lY8D
+10,Сфера развлечений,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/sfera_razvlecenii-ASgBAgICAkToDMj1jgO2rRS8lY8D
+10,Сфера услуг,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/sfera_uslug-ASgBAgICAkToDMj1jgO2rRS~lY8D
+10,Торговля,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/torgovlia-ASgBAgICAkToDMj1jgO2rRTAlY8D
+10,Туризм,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/turizm-ASgBAgICAkToDMj1jgO2rRTClY8D
+10,IT бизнес,https://www.avito.ru/saratov/gotoviy_biznes/franshizy/it_biznes-ASgBAgICAkToDMj1jgO2rRTElY8D
+10,Автобизнес,https://www.avito.ru/saratov/gotoviy_biznes/avtomobilnyi_biznes-ASgBAgICAUToDMy88QI
+10,Арендный бизнес,https://www.avito.ru/saratov/gotoviy_biznes/arendnyi_biznes-ASgBAgICAUToDOCejwM
+10,Красота и здоровье,https://www.avito.ru/saratov/gotoviy_biznes/krasota_i_zdorove-ASgBAgICAUToDM688QI
+10,Общественное питание,https://www.avito.ru/saratov/gotoviy_biznes/obschestvennoe_pitanie-ASgBAgICAUToDKC2AQ
+10,Производство,https://www.avito.ru/saratov/gotoviy_biznes/proizvodstvo-ASgBAgICAUToDKK2AQ
+10,Пункты выдачи заказов,https://www.avito.ru/saratov/gotoviy_biznes/punkty_vydaci_zakazov-ASgBAgICAUToDOKejwM
+10,Сельское хозяйство,https://www.avito.ru/saratov/gotoviy_biznes/selskoe_hozyaystvo-ASgBAgICAUToDKa2AQ
+10,Строительство,https://www.avito.ru/saratov/gotoviy_biznes/stroitelstvo-ASgBAgICAUToDKi2AQ
+10,Сфера развлечений,https://www.avito.ru/saratov/gotoviy_biznes/sfera_razvlechenii-ASgBAgICAUToDKS2AQ
+10,Сфера услуг,https://www.avito.ru/saratov/gotoviy_biznes/sfera_uslug-ASgBAgICAUToDKq2AQ
+10,Торговля,https://www.avito.ru/saratov/gotoviy_biznes/torgovlya-ASgBAgICAUToDKy2AQ
+10,Туризм,https://www.avito.ru/saratov/gotoviy_biznes/gostinicy_i_bazy_otdykha-ASgBAgICAUToDNK88QI
+10,IT бизнес,https://www.avito.ru/saratov/gotoviy_biznes/it_biznes-ASgBAgICAUToDJ62AQ
+10,Другое,https://www.avito.ru/saratov/gotoviy_biznes/drugoe-ASgBAgICAUToDK62AQ
+11,Женская одежда,https://www.avito.ru/saratov/mall/odezhda_obuv_aksessuary/zhenskaya_odezhda-ASgBAgICAUTeAtYL
+11,Женская обувь,https://www.avito.ru/saratov/mall/odezhda_obuv_aksessuary/obuv_zhenskaya-ASgBAgICAUTeAryp1gI
+11,Мужская одежда,https://www.avito.ru/saratov/mall/odezhda_obuv_aksessuary/muzhskaya_odezhda-ASgBAgICAUTeAtgL
+11,Мужская обувь,https://www.avito.ru/saratov/mall/odezhda_obuv_aksessuary/obuv_muzhskaya-ASgBAgICAUTeArqp1gI
+11,"Сумки, рюкзаки и чемоданы",https://www.avito.ru/saratov/mall/odezhda_obuv_aksessuary/sumki_ryukzaki_i_chemodany-ASgBAgICAUTeArip1gI
+11,Аксессуары,https://www.avito.ru/saratov/mall/odezhda_obuv_aksessuary/kupit-aksessuary-ASgBAgICAUTeAtoL
+11,"Кровати, диваны и кресла",https://www.avito.ru/saratov/mall/mebel_i_interer/myagkaya_mebel-ASgBAgICAURaqgI
+11,"Шкафы, комоды и стеллажи",https://www.avito.ru/saratov/mall/mebel_i_interer/shkafy_komodyi_stellazhi-ASgBAgICAURaqAI
+11,Столы и стулья,https://www.avito.ru/saratov/mall/mebel_i_interer/stoly_i_stulya-ASgBAgICAURasAI
+11,Кухонные гарнитуры,https://www.avito.ru/saratov/mall/mebel_i_interer/kuhonnye_garnitury-ASgBAgICAURazk8
+11,Текстиль и ковры,https://www.avito.ru/saratov/mall/mebel_i_interer/tekstil_i_kovry-ASgBAgICAURasgI
+11,"Предметы интерьера, искусство",https://www.avito.ru/saratov/mall/mebel_i_interer/predmety_interera_iskusstvo-ASgBAgICAURapAI
+11,Освещение,https://www.avito.ru/saratov/mall/mebel_i_interer/osveschenie-ASgBAgICAURarAI
+11,Детская мебель,https://www.avito.ru/saratov/mall/tovary_dlya_detey_i_igrushki/detskaya_mebel-ASgBAgICAUT~AZQJ
+11,Посуда и товары для кухни,https://www.avito.ru/saratov/mall/posuda_i_tovary_dlya_kuhni
+11,Книги и журналы,https://www.avito.ru/saratov/mall/knigi_i_zhurnaly
+11,Музыкальные инструменты,https://www.avito.ru/saratov/mall/muzykalnye_instrumenty
+11,Спорт и отдых,https://www.avito.ru/saratov/mall/sport_i_otdyh
+11,Смартфоны,https://www.avito.ru/saratov/mall/telefony/mobile-ASgBAgICAUSwwQ2I_Dc
+11,Бытовая техника,https://www.avito.ru/saratov/mall/bytovaya_tehnika
+11,Ноутбуки,https://www.avito.ru/saratov/mall/noutbuki
+11,Настольные компьютеры,https://www.avito.ru/saratov/mall/nastolnye_kompyutery
+11,Аудио и видео,https://www.avito.ru/saratov/mall/audio_i_video
+11,"Игры, приставки и программы",https://www.avito.ru/saratov/mall/igry_pristavki_i_programmy
+11,Планшеты и электронные книги,https://www.avito.ru/saratov/mall/planshety_i_elektronnye_knigi
+11,Товары для компьютера,https://www.avito.ru/saratov/mall/tovary_dlya_kompyutera
+11,Фототехника,https://www.avito.ru/saratov/mall/fototehnika
+11,Оргтехника и расходники,https://www.avito.ru/saratov/mall/orgtehnika_i_rashodniki
+11,Одежда для девочек,https://www.avito.ru/saratov/mall/detskaya_odezhda_i_obuv/odezhda-dlya_devochek-ASgBAgICAUTkAuwL
+11,Обувь для девочек,https://www.avito.ru/saratov/mall/detskaya_odezhda_i_obuv/obuv-dlya_devochek-ASgBAgICAkTkAuwL5gKADA
+11,Одежда для мальчиков,https://www.avito.ru/saratov/mall/detskaya_odezhda_i_obuv/odezhda-dlya_malchikov-ASgBAgICAUTkAu4L
+11,Обувь для мальчиков,https://www.avito.ru/saratov/mall/detskaya_odezhda_i_obuv/obuv-dlya_malchikov-ASgBAgICAkTcAbIG5ALuCw
+11,Игрушки,https://www.avito.ru/saratov/mall/tovary_dlya_detey_i_igrushki/igrushki-ASgBAgICAUT~AZYJ
+11,Автокресла,https://www.avito.ru/saratov/mall/tovary_dlya_detey_i_igrushki/avtomobilnye_kresla-ASgBAgICAUT~AZIJ
+11,Коляски,https://www.avito.ru/saratov/mall/tovary_dlya_detey_i_igrushki/detskie_kolyaski-ASgBAgICAUT~AZgJ
+11,"Велосипеды, самокаты",https://www.avito.ru/saratov/mall/tovary_dlya_detey_i_igrushki/velosipedy_i_samokaty-ASgBAgICAUT~AaCGAQ
+11,Красота,https://www.avito.ru/saratov/mall/krasota_i_zdorove
+11,Двери,https://www.avito.ru/saratov/mall/remont_i_stroitelstvo/dveri-ASgBAgICAURYnEs
+11,"Сантехника, водоснабжение и сауна",https://www.avito.ru/saratov/mall/remont_i_stroitelstvo/santehnika_i_sauna-ASgBAgICAURYngI
+11,Инструменты,https://www.avito.ru/saratov/mall/remont_i_stroitelstvo/instrumenty-ASgBAgICAURYoks
+11,Окна и балконы,https://www.avito.ru/saratov/mall/remont_i_stroitelstvo/okna_i_balkony-ASgBAgICAURYoEs
+11,Готовые строения и срубы,https://www.avito.ru/saratov/mall/remont_i_stroitelstvo/gotovye_stroeniya_i_sruby-ASgBAgICAURYlrI6
+11,Запчасти,https://www.avito.ru/saratov/mall/zapchasti_i_aksessuary/zapchasti-ASgBAgICAUQKJA
+11,Аудио- и видеотехника,https://www.avito.ru/saratov/mall/zapchasti_i_aksessuary/audio-_i_videotehnika-ASgBAgICAUQKKA
+11,GPS-навигаторы,https://www.avito.ru/saratov/mall/zapchasti_i_aksessuary/gps-navigatory-ASgBAgICAUQKKg
+11,Инструменты,https://www.avito.ru/saratov/mall/zapchasti_i_aksessuary/instrumenty-ASgBAgICAUQKxk0
+11,Аксессуары,https://www.avito.ru/saratov/mall/zapchasti_i_aksessuary/aksessuary-ASgBAgICAUQKnk0
+11,Противоугонные устройства,https://www.avito.ru/saratov/mall/zapchasti_i_aksessuary/protivougonnye_ustroystva-ASgBAgICAUQKoE0
+11,Экипировка,https://www.avito.ru/saratov/mall/zapchasti_i_aksessuary/ekipirovka-ASgBAgICAUQKoGQ

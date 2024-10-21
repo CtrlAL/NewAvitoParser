@@ -8,6 +8,7 @@ using NewAvitoParser.Enums;
 using Category = NewAvitoParser.Coomon.Avito.Category;
 using SubCategory = NewAvitoParser.Coomon.Avito.SubCategory;
 using Translite = NewAvitoParser.Coomon.Healpers.Translite;
+using OpenQA.Selenium.DevTools.V127.Runtime;
 namespace AvitoParser
 {
 	internal class Program
@@ -28,60 +29,73 @@ namespace AvitoParser
 				_driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
 				_driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
 
-				ConnectToUrl("https://www.avito.ru/");
-				var button = _driver.FindElement(By.XPath("//*[@id]/div/div[4]/div/div[1]/div/div/div[3]/div[1]/div/div/div[1]"));
-				button.Click();
-				
-				var categoryBoard = _driver.FindElement(By.ClassName("new-rubricator-content-root-_qZMR"));
-				var categoryList = categoryBoard.FindElement(By.ClassName("new-rubricator-content-leftcontent-_hhyV")).FindElements(By.ClassName("new-rubricator-content-rootCategory-S2VPI"));
-
-				for (int i = 0; i < categoryList.Count; i++)
+				Console.WriteLine("Setup Catregories form site {Type 0} or from file {Type 1}");
+				var mode = Console.ReadLine();
+				int modeValue = int.Parse(mode);
+				if (modeValue == 1)
 				{
-					categoryList[i].Click();
-					var categoryInfo = _driver.FindElement(By.ClassName("new-rubricator-content-rightContent-zbUZa"));
+					Avito.FromFile();
+				}
+				else
+				{
 
-					var moreButton = categoryInfo.FindElements(By.ClassName("new-rubricator-content-moreButton-i6UsT"));
 
-					//Clisk More Buttons for load attitional content
-                    foreach (var item in moreButton)
-                    {
-						item.Click();
-                    }
+					ConnectToUrl("https://www.avito.ru/");
+					var button = _driver.FindElement(By.XPath("//*[@id]/div/div[4]/div/div[1]/div/div/div[3]/div[1]/div/div/div[1]"));
+					button.Click();
 
-                    var category = categoryInfo.FindElement(By.ClassName("desktop-16cl456"));
-					Avito.CategoryList.Add(i, new Category { Name = category.Text.Replace("›", " ").Trim(), Link = category.GetAttribute("href") });
+					var categoryBoard = _driver.FindElement(By.ClassName("new-rubricator-content-root-_qZMR"));
+					var categoryList = categoryBoard.FindElement(By.ClassName("new-rubricator-content-leftcontent-_hhyV")).FindElements(By.ClassName("new-rubricator-content-rootCategory-S2VPI"));
 
-					var subCategory = categoryInfo.FindElements(By.ClassName("new-rubricator-content-child-_bmMo"));
-
-					foreach (var item in subCategory)
+					for (int i = 0; i < categoryList.Count; i++)
 					{
-						try
+						categoryList[i].Click();
+						var categoryInfo = _driver.FindElement(By.ClassName("new-rubricator-content-rightContent-zbUZa"));
+
+						var moreButton = categoryInfo.FindElements(By.ClassName("new-rubricator-content-moreButton-i6UsT"));
+
+						//Clisk More Buttons for load attitional content
+						foreach (var item in moreButton)
 						{
-							var subSubCategories = item.FindElements(By.ClassName("desktop-mv9h2z"));
-
-							if (subSubCategories.Count == 0)
-							{
-								var link = item.FindElement(By.ClassName("desktop-rlpl5r")).GetAttribute("href");
-								var name = item.FindElement(By.ClassName("styles-module-root-bLKnd")).Text.Replace("›", " ").Trim();
-								Console.WriteLine($"Категория:{name}");
-								Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
-							}
-
-
-							foreach (var childCategory in subSubCategories)
-							{
-								var link = childCategory.GetAttribute("href");
-								var name = childCategory.FindElement(By.ClassName("styles-module-size_s-xb_uK")).Text;
-								Console.WriteLine($"Категория:{name}");
-								Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
-							}
+							item.Click();
 						}
-						catch(Exception ex)
+
+						var category = categoryInfo.FindElement(By.ClassName("desktop-16cl456"));
+						Avito.CategoryList.Add(i, new Category { Name = category.Text.Replace("›", " ").Trim(), Link = category.GetAttribute("href") });
+
+						var subCategory = categoryInfo.FindElements(By.ClassName("new-rubricator-content-child-_bmMo"));
+
+						foreach (var item in subCategory)
 						{
-							continue;
+							try
+							{
+								var subSubCategories = item.FindElements(By.ClassName("desktop-mv9h2z"));
+
+								if (subSubCategories.Count == 0)
+								{
+									var link = item.FindElement(By.ClassName("desktop-rlpl5r")).GetAttribute("href");
+									var name = item.FindElement(By.ClassName("styles-module-root-bLKnd")).Text.Replace("›", " ").Trim();
+									Console.WriteLine($"Категория:{name}");
+									Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
+								}
+
+
+								foreach (var childCategory in subSubCategories)
+								{
+									var link = childCategory.GetAttribute("href");
+									var name = childCategory.FindElement(By.ClassName("styles-module-size_s-xb_uK")).Text;
+									Console.WriteLine($"Категория:{name}");
+									Avito.SubCategoryList.Add(new SubCategory { CategoryId = i, Link = link, Name = name });
+								}
+							}
+							catch (Exception ex)
+							{
+								continue;
+							}
 						}
 					}
 				}
+				Avito.WriteToFile();
 			}
 			catch(Exception ex)
 			{
@@ -179,6 +193,7 @@ namespace AvitoParser
 			var properties = new HashSet<Property>();
 			var propertiesNames = new List<PropNameMaper>();
 			var propertiesValues = new List<PropValueMaper>();
+			var propertiesList = new List<Property>();
 			string currentUrl = string.Empty;
 
 
@@ -230,8 +245,6 @@ namespace AvitoParser
 					{
 						var links = HelperCsv.ReadFile<LinksMapper>(Constants.Files.LinksVaritant(dirNameTemplate));
 
-						var propertiesList = new List<Property>();
-
 						foreach (var link in links)
 						{
 							var url = link.Link;
@@ -275,33 +288,7 @@ namespace AvitoParser
 								}
 							}
 						}
-
-						properties = new HashSet<Property>(propertiesList);
-
-						propertiesNames = new HashSet<PropNameMaper>(properties.Select(p => new PropNameMaper
-						{
-							Id = 0,
-							Name = p.Name,
-							SubCategoryName = p.SubCategoryName,
-						})).Select((item, Index) =>
-							{
-								item.Id = Index;
-								return item;
-							}
-						).ToList();
-
-						propertiesValues = new HashSet<PropValueMaper>(properties.Select((item) => new PropValueMaper
-						{
-							Id = 0,
-							PropertyId = propertiesNames.Find(pn => item.Name == pn.Name).Id,
-							Value = item.Value,
-							SubCategoryName = item.SubCategoryName
-						})).Select((item, Index) =>
-						{
-							item.Id = Index;
-							return item;
-						}
-						).ToList();
+						PorpsNamesValuesExtract(propertiesList, out properties, out propertiesNames, out propertiesValues);
 					}
 				}
 				catch (Exception ex)
@@ -310,12 +297,46 @@ namespace AvitoParser
 				}
 				finally
 				{
+					PorpsNamesValuesExtract(propertiesList, out properties, out propertiesNames, out propertiesValues);
 					HelperCsv.WriteFile(Constants.Files.PropertiesVaritant(dirNameTemplate), properties);
 					HelperCsv.WriteFile(Constants.Files.PropertyNamesVariant(dirNameTemplate), propertiesValues);
 					HelperCsv.WriteFile(Constants.Files.PropertyValuesVariant(dirNameTemplate), propertiesNames);
 					Dispose();
 				}
 			}
+		}
+
+		public static void PorpsNamesValuesExtract(List<Property> propertiesList, 
+			out HashSet<Property> properties, 
+			out List<PropNameMaper> propertiesNames, 
+			out List<PropValueMaper> propertiesValues)
+		{
+			properties = new HashSet<Property>(propertiesList);
+
+			propertiesNames = new HashSet<PropNameMaper>(properties.Select(p => new PropNameMaper
+			{
+				Id = 0,
+				Name = p.Name,
+				SubCategoryName = p.SubCategoryName,
+			})).Select((item, Index) =>
+			{
+				item.Id = Index;
+				return item;
+			}).ToList();
+
+			var names = propertiesNames;
+
+			propertiesValues = new HashSet<PropValueMaper>(properties.Select((item) => new PropValueMaper
+			{
+				Id = 0,
+				PropertyId = names.Find(pn => item.Name == pn.Name).Id,
+				Value = item.Value,
+				SubCategoryName = item.SubCategoryName
+			})).Select((item, Index) =>
+			{
+				item.Id = Index;
+				return item;
+			}).ToList();
 		}
 
 		public static void LogException(Exception exception, string url)
@@ -325,6 +346,7 @@ namespace AvitoParser
 						+ $"Message: {exception.Message}\n"
 						+ $"StackTrace: {exception.StackTrace}\n"
 						+ $"LastUrl: {url}\n"
+						+ $"Time: {DateTime.Now}\n"
 						+ "\n}\n";
 
 			Console.WriteLine(log);

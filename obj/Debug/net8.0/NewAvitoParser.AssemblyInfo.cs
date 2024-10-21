@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NewAvitoParser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c79c80cf8128db6433fcd3e7293d955c392eff66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1b50c63d49e6ec8df4de0ab48fc4241aa5b25a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("NewAvitoParser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NewAvitoParser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

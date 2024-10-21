@@ -7,6 +7,7 @@ using NewAvitoParser;
 using NewAvitoParser.Enums;
 using Category = NewAvitoParser.Coomon.Avito.Category;
 using SubCategory = NewAvitoParser.Coomon.Avito.SubCategory;
+using Translite = NewAvitoParser.Coomon.Healpers.Translite;
 namespace AvitoParser
 {
 	internal class Program
@@ -116,32 +117,34 @@ namespace AvitoParser
 		{
 			foreach (var elem in Avito.CategoryList)
 			{
-				string path1 = Constants.Files.PropertiesVaritant(elem.Value.Name);
-				string path2 = Constants.Files.PropertyNamesVariant(elem.Value.Name);
-				string path3 = Constants.Files.PropertyValuesVariant(elem.Value.Name);
-				string path4 = Constants.Files.LinksVaritant(elem.Value.Name);
+				var name = Translite.CyrilicToLatin(elem.Value.Name);
+
+				string path1 = Constants.Files.PropertiesVaritant(name);
+				string path2 = Constants.Files.PropertyNamesVariant(name);
+				string path3 = Constants.Files.PropertyValuesVariant(name);
+				string path4 = Constants.Files.LinksVaritant(name);
 
 				if (!File.Exists(path1))
 				{
-					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
+					Directory.CreateDirectory($"..\\..\\{name}");
 					File.Create(path1);
 				}
 
 				if (!File.Exists(path2))
 				{
-					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
+					Directory.CreateDirectory($"..\\..\\{name}");
 					File.Create(path2);
 				}
 
 				if (!File.Exists(path3))
 				{
-					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
+					Directory.CreateDirectory($"..\\..\\{name}");
 					File.Create(path3);
 				}
 
 				if (!File.Exists(path4))
 				{
-					Directory.CreateDirectory($"..\\..\\{elem.Value.Name}");
+					Directory.CreateDirectory($"..\\..\\{name}");
 					File.Create(path4);
 				}
 			}
@@ -171,11 +174,11 @@ namespace AvitoParser
 
 			Console.WriteLine("Enter SectionId which u want to parse:");
 			int.TryParse(Console.ReadLine(), out categoryId);
-			
+
+			var dirNameTemplate =	Translite.CyrilicToLatin(Avito.CategoryList[categoryId].Name);
 			var properties = new HashSet<Property>();
 			var propertiesNames = new List<PropNameMaper>();
 			var propertiesValues = new List<PropValueMaper>();
-
 			string currentUrl = string.Empty;
 
 
@@ -217,7 +220,7 @@ namespace AvitoParser
 							}
 						}
 
-						HelperCsv.WriteFile(path: Constants.Files.LinksVaritant(Avito.CategoryList[categoryId].Name), content: links);
+						HelperCsv.WriteFile(path: Constants.Files.LinksVaritant(dirNameTemplate), content: links);
 					}
 
 					mode = ParserMode.Attributes;
@@ -225,7 +228,7 @@ namespace AvitoParser
 					
 					if (mode == ParserMode.Attributes)
 					{
-						var links = HelperCsv.ReadFile<LinksMapper>(Constants.Files.LinksVaritant(Avito.CategoryList[categoryId].Name));
+						var links = HelperCsv.ReadFile<LinksMapper>(Constants.Files.LinksVaritant(dirNameTemplate));
 
 						var propertiesList = new List<Property>();
 
@@ -307,9 +310,9 @@ namespace AvitoParser
 				}
 				finally
 				{
-					HelperCsv.WriteFile(Constants.Files.PropertiesVaritant(Avito.CategoryList[categoryId].Name), properties);
-					HelperCsv.WriteFile(Constants.Files.PropertyNamesVariant(Avito.CategoryList[categoryId].Name), propertiesValues);
-					HelperCsv.WriteFile(Constants.Files.PropertyValuesVariant(Avito.CategoryList[categoryId].Name), propertiesNames);
+					HelperCsv.WriteFile(Constants.Files.PropertiesVaritant(dirNameTemplate), properties);
+					HelperCsv.WriteFile(Constants.Files.PropertyNamesVariant(dirNameTemplate), propertiesValues);
+					HelperCsv.WriteFile(Constants.Files.PropertyValuesVariant(dirNameTemplate), propertiesNames);
 					Dispose();
 				}
 			}

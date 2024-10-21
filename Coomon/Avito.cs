@@ -4,6 +4,14 @@ namespace NewAvitoParser.Coomon
 {
 	public static class Avito
 	{
+#if OS_WINDOWS
+		private static string categoryFile = "..\\..\\Categories.csv";
+		private static string subCategoryFile = "..\\..\\SubCategories.csv";
+#else
+		private static string categoryFile = "bin/Categories.csv";
+		private static string subCategoryFile = "bin/SubCategories.csv";
+
+#endif
 		public struct SubCategory
 		{
 			public int CategoryId { get; set; }
@@ -30,25 +38,20 @@ namespace NewAvitoParser.Coomon
 					Link = category.Value.Link,
 				});
 			}
-#if OS_WINDOWS
-			HelperCsv.WriteFile("..\\..\\Categories.csv", categories);
-			HelperCsv.WriteFile("..\\..\\SubCategories.csv", SubCategoryList);
-#else
-			HelperCsv.WriteFile("bin/Categories.csv", categories);
-			HelperCsv.WriteFile("bin/SubCategories.csv", categories);
-#endif
+			HelperCsv.WriteFile(categoryFile, categories);
+			HelperCsv.WriteFile(subCategoryFile, SubCategoryList);
 		}
 
 		public static void FromFile()
 		{
-			var categories = HelperCsv.ReadFile<CategoryMapper>("..\\..\\Categories.csv");
+			var categories = HelperCsv.ReadFile<CategoryMapper>(categoryFile);
 
 			foreach (var category in categories)
 			{
 				CategoryList.Add(category.Id, new Category { Link = category.Link, Name = category.Name});
 			}
 
-			SubCategoryList = HelperCsv.ReadFile<SubCategory>("..\\..\\SubCategories.csv");
+			SubCategoryList = HelperCsv.ReadFile<SubCategory>(subCategoryFile);
 		}
 	}
 }

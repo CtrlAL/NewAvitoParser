@@ -226,6 +226,12 @@ namespace AvitoParser
 										.ToArray();
 
 									links.AddRange(hrefs);
+									
+									//Time Litit , Should be optional
+									if (links.Count > 2000)
+									{
+										break;
+									}
 								}
 							}
 							catch(Exception ex)
@@ -244,50 +250,60 @@ namespace AvitoParser
 					if (mode == ParserMode.Attributes)
 					{
 						var links = HelperCsv.ReadFile<LinksMapper>(Constants.Files.LinksVaritant(dirNameTemplate));
+						var categoriesGroup = links.GroupBy(item => item.SubCategoryName);
 
-						foreach (var link in links)
-						{
-							var url = link.Link;
-							var subCategoryName = link.SubCategoryName;
+						foreach (var categoryLinks in categoriesGroup) {
 
-							ConnectToUrl(url);
-							currentUrl = url;
-							Console.WriteLine($"PRODUCT_LINK:{currentUrl}");
-							var attributes = _driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
-
-							if (attributes != null)
+							if (categoryLinks.Count() > 2000)
 							{
-								foreach (var elem in attributes)
+								var urls = categoryLinks.ToList().GetRange(0, 2000);
+							}
+
+							foreach (var link in categoryLinks)
+							{
+								var url = link.Link;
+								var subCategoryName = link.SubCategoryName;
+
+								ConnectToUrl(url);
+								currentUrl = url;
+								Console.WriteLine($"PRODUCT_LINK:{currentUrl}");
+								var attributes = _driver.FindElements(By.ClassName("params-paramsList__item-_2Y2O"));
+
+								if (attributes != null)
 								{
-									string[] nameValuePare;
-
-									if (elem != null)
+									foreach (var elem in attributes)
 									{
-										if (!elem.Text.Contains(':'))
-										{
-											var text = elem.Text.Substring(1);
-											var upperCase = text.Where(char.IsUpper).First();
-											var index = text.IndexOf(upperCase);
-											text = elem.Text.Insert(index + 1, " ");
-											nameValuePare = text.Split(" ");
-										}
-										else
-										{
-											nameValuePare = elem.Text.Split(':');
-										}
+										string[] nameValuePare;
 
-										var property = new Property
+										if (elem != null)
 										{
-											SubCategoryName = subCategoryName,
-											Name = nameValuePare[0].Trim(' '),
-											Value = nameValuePare[1].Trim(' ')
-										};
+											if (!elem.Text.Contains(':'))
+											{
+												var text = elem.Text.Substring(1);
+												var upperCase = text.Where(char.IsUpper).First();
+												var index = text.IndexOf(upperCase);
+												text = elem.Text.Insert(index + 1, " ");
+												nameValuePare = text.Split(" ");
+											}
+											else
+											{
+												nameValuePare = elem.Text.Split(':');
+											}
 
-										propertiesList.AddRange(AvitoParamsConverter.ParamDisoposer(property));
+											var property = new Property
+											{
+												SubCategoryName = subCategoryName,
+												Name = nameValuePare[0].Trim(' '),
+												Value = nameValuePare[1].Trim(' ')
+											};
+
+											propertiesList.AddRange(AvitoParamsConverter.ParamDisoposer(property));
+										}
 									}
 								}
 							}
 						}
+							
 						PorpsNamesValuesExtract(propertiesList, out properties, out propertiesNames, out propertiesValues);
 					}
 				}
@@ -299,8 +315,8 @@ namespace AvitoParser
 				{
 					PorpsNamesValuesExtract(propertiesList, out properties, out propertiesNames, out propertiesValues);
 					HelperCsv.WriteFile(Constants.Files.PropertiesVaritant(dirNameTemplate), properties);
-					HelperCsv.WriteFile(Constants.Files.PropertyNamesVariant(dirNameTemplate), propertiesValues);
-					HelperCsv.WriteFile(Constants.Files.PropertyValuesVariant(dirNameTemplate), propertiesNames);
+					HelperCsv.WriteFile(Constants.Files.PropertyNamesVariant(dirNameTemplate), propertiesNames);
+					HelperCsv.WriteFile(Constants.Files.PropertyValuesVariant(dirNameTemplate), propertiesValues);
 					Dispose();
 				}
 			}

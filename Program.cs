@@ -254,9 +254,9 @@ namespace AvitoParser
 
 						foreach (var categoryLinks in categoriesGroup) {
 
-							if (categoryLinks.Count() > 2000)
+							if (categoryLinks.Count() > 100)
 							{
-								var urls = categoryLinks.ToList().GetRange(0, 2000);
+								var urls = categoryLinks.ToList().GetRange(0, 100);
 							}
 
 							foreach (var link in categoryLinks)

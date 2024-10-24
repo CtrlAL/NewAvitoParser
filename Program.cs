@@ -8,7 +8,6 @@ using NewAvitoParser.Enums;
 using Category = NewAvitoParser.Coomon.Avito.Category;
 using SubCategory = NewAvitoParser.Coomon.Avito.SubCategory;
 using Translite = NewAvitoParser.Coomon.Healpers.Translite;
-using OpenQA.Selenium.DevTools.V127.Runtime;
 namespace AvitoParser
 {
 	internal class Program
@@ -204,6 +203,7 @@ namespace AvitoParser
 					if(mode == ParserMode.Links)
 					{
 						var links = new List<LinksMapper>();
+
 						foreach (var category in Avito.SubCategoryList.Where(item => item.CategoryId == categoryId))
 						{
 							var url = category.Link;
@@ -254,12 +254,14 @@ namespace AvitoParser
 
 						foreach (var categoryLinks in categoriesGroup) {
 
+							var urls = new List<LinksMapper>();
+
 							if (categoryLinks.Count() > 100)
 							{
-								var urls = categoryLinks.ToList().GetRange(0, 100);
+								urls = categoryLinks.ToList().GetRange(0, 100);
 							}
 
-							foreach (var link in categoryLinks)
+							foreach (var link in urls)
 							{
 								var url = link.Link;
 								var subCategoryName = link.SubCategoryName;
@@ -277,27 +279,36 @@ namespace AvitoParser
 
 										if (elem != null)
 										{
-											if (!elem.Text.Contains(':'))
+											//If elem hasnt text continue;
+											try
 											{
-												var text = elem.Text.Substring(1);
-												var upperCase = text.Where(char.IsUpper).First();
-												var index = text.IndexOf(upperCase);
-												text = elem.Text.Insert(index + 1, " ");
-												nameValuePare = text.Split(" ");
-											}
-											else
-											{
-												nameValuePare = elem.Text.Split(':');
-											}
+												if (!elem.Text.Contains(':'))
+												{
+													var text = elem.Text.Substring(1);
+													var upperCase = text.Where(char.IsUpper).First();
+													var index = text.IndexOf(upperCase);
+													text = elem.Text.Insert(index + 1, " ");
+													nameValuePare = text.Split(" ");
+												}
+												else
+												{
+													nameValuePare = elem.Text.Split(':');
+												}
 
-											var property = new Property
-											{
-												SubCategoryName = subCategoryName,
-												Name = nameValuePare[0].Trim(' '),
-												Value = nameValuePare[1].Trim(' ')
-											};
+												var property = new Property
+												{
+													SubCategoryName = subCategoryName,
+													Name = nameValuePare[0].Trim(' '),
+													Value = nameValuePare[1].Trim(' ')
+												};
 
-											propertiesList.AddRange(AvitoParamsConverter.ParamDisoposer(property));
+												propertiesList.AddRange(AvitoParamsConverter.ParamDisoposer(property));
+											}
+											catch(Exception ex)
+											{
+												LogException(ex, currentUrl);
+												continue;
+											}				
 										}
 									}
 								}
@@ -336,9 +347,9 @@ namespace AvitoParser
 				SubCategoryName = p.SubCategoryName,
 			})).Select((item, Index) =>
 			{
-				item.Id = Index;
+				item.Id = Index + 1;
 				return item;
-			}).ToList();
+			}).OrderBy(pn => pn.Id).ToList();
 
 			var names = propertiesNames;
 
@@ -348,9 +359,9 @@ namespace AvitoParser
 				PropertyId = names.Find(pn => item.Name == pn.Name).Id,
 				Value = item.Value,
 				SubCategoryName = item.SubCategoryName
-			})).Select((item, Index) =>
+			})).OrderBy(pv => pv.PropertyId).Select((item, Index) =>
 			{
-				item.Id = Index;
+				item.Id = Index + 1;
 				return item;
 			}).ToList();
 		}

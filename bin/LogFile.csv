@@ -520,3 +520,185 @@ LastUrl: https://www.avito.ru/saratov/telefony/iphone_xr_64_gb_4430467089
 Time: 22.10.2024 13:43:27
 
 }
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 290
+LastUrl: https://www.avito.ru/saratov/telefony/iphone_16_pro_max_256_gb_4273265603
+Time: 23.10.2024 12:06:14
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 280
+LastUrl: https://www.avito.ru/saratov/telefony/iphone_8_64_gb_4344160031
+Time: 23.10.2024 12:51:33
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 300
+LastUrl: https://www.avito.ru/saratov/telefony/zte_blade_a5_2020_232_gb_4507471602
+Time: 23.10.2024 14:15:28
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/telefony/eksklyuzivnyy_chehol_dlya_iphone_x_3606887804
+Time: 24.10.2024 11:59:09
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/telefony/eksklyuzivnyy_chehol_dlya_iphone_x_3606887804
+Time: 24.10.2024 11:59:09
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/audio_i_video/kamery_s_kronshteynom_3887722338
+Time: 24.10.2024 12:31:15
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/audio_i_video/kamery_s_kronshteynom_3887722338
+Time: 24.10.2024 12:31:15
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitor_dlya_kompyutera_4506608148
+Time: 24.10.2024 13:20:24
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitor_dlya_kompyutera_4506608148
+Time: 24.10.2024 13:20:24
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitor_dlya_kompyutera_4506608148
+Time: 24.10.2024 13:20:24
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitor_dlya_kompyutera_4506608148
+Time: 24.10.2024 13:20:24
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitor_dlya_kompyutera_4506608148
+Time: 24.10.2024 13:20:25
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitor_dlya_kompyutera_4506608148
+Time: 24.10.2024 13:20:25
+
+}
+ERROR:
+{
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+StackTrace:    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebElement.get_Text()
+   at AvitoParser.Program.Main(String[] args) in C:\Larcev\Parser\NewAvitoParser\Program.cs:line 285
+LastUrl: https://www.avito.ru/saratov/tovary_dlya_kompyutera/monitor_dlya_kompyutera_4506608148
+Time: 24.10.2024 13:20:25
+
+}
